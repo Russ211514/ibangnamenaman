@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://d31cks6rcvpvr"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_hmvni"]
+
+[resource]
+script = ExtResource("1_hmvni")
+Question_Info = "Which is the correct way to change both the color and the alignment of a paragraph in one tag?"
+options = Array[String](["`<p style=\"color: red; text-align: center;\">`", "`<p style=\"color: red\" style=\"text-align: center\">`", "`<p style=\"color: red + text-align: center\">`", "`<p style=\"color: red: text-align: center:\">`"])
+correct = "`<p style=\"color: red; text-align: center;\">`"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

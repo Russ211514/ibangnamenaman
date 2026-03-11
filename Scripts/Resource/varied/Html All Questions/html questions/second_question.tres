@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://p7ctefnjoeqf"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_r5sqk"]
+
+[resource]
+script = ExtResource("1_r5sqk")
+Question_Info = "What does HTML stand for?"
+options = Array[String](["Hyper Trainer Marking Language.", "HyperText Markup Language.", "HighText Machine Language.", "Hyper Tool Multi Language."])
+correct = "HyperText Markup Language."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

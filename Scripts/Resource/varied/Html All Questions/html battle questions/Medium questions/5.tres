@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://7aq8h2tyhsfa"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_6assk"]
+
+[resource]
+script = ExtResource("1_6assk")
+Question_Info = "A developer wrote: `<p style=\"font-size=20px\">`. Why is the text not changing size?"
+options = Array[String](["`font-size` is not a real property.", "They used an equals sign (`=`) instead of a colon (`:`) inside the style.", "Paragraphs cannot have their font size changed.", "The value `20px` must be in parentheses."])
+correct = "They used an equals sign (`=`) instead of a colon (`:`) inside the style."
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

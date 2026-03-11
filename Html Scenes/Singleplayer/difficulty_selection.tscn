@@ -1,0 +1,178 @@
+[gd_scene format=3 uid="uid://tnna7c485oeg"]
+
+[ext_resource type="Script" uid="uid://mg3jstwu08ab" path="res://Scripts/difficulty_selection.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://dpehra2sgmb3n" path="res://Html Scenes/Singleplayer/html_battle.tscn" id="2_4fm3b"]
+[ext_resource type="Texture2D" uid="uid://cchw0nrt5a14n" path="res://Art Assets/backgrounds/bground.png" id="2_v1aw8"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="3_font"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="4_4fm3b"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qbug4"]
+texture = ExtResource("2_v1aw8")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wg653"]
+texture = ExtResource("4_4fm3b")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_assmo"]
+texture = ExtResource("4_4fm3b")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7pi3i"]
+texture = ExtResource("4_4fm3b")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ctsqj"]
+texture = ExtResource("4_4fm3b")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_d542t"]
+load_path = "res://.godot/imported/stonebutton.png-cd0061a5da0cd8d5a9eefbbb3b8373e6.ctex"
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_srd6c"]
+texture = SubResource("CompressedTexture2D_d542t")
+region_rect = Rect2(67.81638, 53.940723, 184.29651, 72.11586)
+
+[node name="Control" type="Control" unique_id=130629810]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+game_scene = ExtResource("2_4fm3b")
+
+[node name="bg" type="Panel" parent="." unique_id=1218202305]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_qbug4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1607455279]
+
+[node name="title" type="Label" parent="CanvasLayer" unique_id=194415570]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -741.5
+offset_top = 102.0
+offset_right = 741.5
+offset_bottom = 199.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 1
+theme_override_font_sizes/font_size = 110
+text = "CHOOSE A BOT DIFFICULTY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="Button" parent="CanvasLayer" unique_id=229382428]
+offset_left = 1646.0
+offset_top = 897.0
+offset_right = 1791.0
+offset_bottom = 967.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_font")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_wg653")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_assmo")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7pi3i")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ctsqj")
+text = "BACK"
+
+[node name="selects" type="Control" parent="CanvasLayer" unique_id=348120610]
+layout_mode = 3
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 80.0
+offset_top = 217.0
+offset_right = 870.0
+offset_bottom = -146.0
+grow_vertical = 2
+
+[node name="easy" type="Button" parent="CanvasLayer/selects" unique_id=1034534443]
+layout_mode = 0
+offset_left = 281.0
+offset_top = 85.0
+offset_right = 728.0
+offset_bottom = 229.0
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/hover = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/focus = SubResource("StyleBoxTexture_srd6c")
+text = "EASY"
+
+[node name="normal" type="Button" parent="CanvasLayer/selects" unique_id=1815220235]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 326.0
+offset_right = 727.8667
+offset_bottom = 471.0
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/hover = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/focus = SubResource("StyleBoxTexture_srd6c")
+text = "NORMAL"
+
+[node name="hard" type="Button" parent="CanvasLayer/selects" unique_id=475490576]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 549.0
+offset_right = 728.0
+offset_bottom = 694.0
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/hover = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/focus = SubResource("StyleBoxTexture_srd6c")
+text = "HARD"
+
+[node name="start" type="Button" parent="CanvasLayer/selects" unique_id=123808975]
+layout_mode = 0
+offset_left = 1019.0
+offset_top = 326.0
+offset_right = 1436.0
+offset_bottom = 471.0
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/hover = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_srd6c")
+theme_override_styles/focus = SubResource("StyleBoxTexture_srd6c")
+text = "START"
+
+[node name="info" type="Label" parent="CanvasLayer" unique_id=1898322930]
+offset_left = 951.0
+offset_top = 303.0
+offset_right = 991.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 30
+
+[connection signal="pressed" from="CanvasLayer/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="CanvasLayer/selects/easy" to="." method="_on_easy_pressed"]
+[connection signal="pressed" from="CanvasLayer/selects/normal" to="." method="_on_normal_pressed"]
+[connection signal="pressed" from="CanvasLayer/selects/hard" to="." method="_on_hard_pressed"]
+[connection signal="pressed" from="CanvasLayer/selects/start" to="." method="_on_start_pressed"]

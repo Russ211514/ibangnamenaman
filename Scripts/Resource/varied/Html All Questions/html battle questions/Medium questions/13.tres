@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://d0c4ovwt8rqlh"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_f4y0r"]
+
+[resource]
+script = ExtResource("1_f4y0r")
+Question_Info = "Which tag makes text look italicized while specifically signaling \"verbal emphasis\" to a computer?"
+options = Array[String](["`<i>`", "`<em>`", "`<u>`", "`<cite>`"])
+correct = "`<em>`"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

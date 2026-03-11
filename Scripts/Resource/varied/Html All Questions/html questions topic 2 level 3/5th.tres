@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cf8qidl4f75uo"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_85kf6"]
+
+[resource]
+script = ExtResource("1_85kf6")
+Question_Info = "If you apply the property font-size: 80px; to a paragraph that was previously 20px, what will be the visual result?"
+options = Array[String](["The text will become much smaller and harder to read.", "The background color will change.", "The text will become significantly larger.", "The text will move to the right side of the screen."])
+correct = "The text will become significantly larger."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

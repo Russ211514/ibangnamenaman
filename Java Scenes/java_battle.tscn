@@ -1,0 +1,305 @@
+[gd_scene format=3 uid="uid://bjykvgsaksys4"]
+
+[ext_resource type="Script" uid="uid://b4h7jgw5xhajg" path="res://Scripts/background_sprite.gd" id="1_kkal1"]
+[ext_resource type="Script" uid="uid://cpouvl7vvbl5q" path="res://Scripts/java_battle.gd" id="1_vqxab"]
+[ext_resource type="Theme" uid="uid://2q3vbk6bmh2r" path="res://Themes/default_theme.tres" id="2_vqxab"]
+[ext_resource type="PackedScene" uid="uid://cvj375674d1g6" path="res://Scenes/window_default.tscn" id="3_tquil"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="4_mi5wd"]
+[ext_resource type="PackedScene" uid="uid://cjbitdt03r8sc" path="res://Scenes/health_bar.tscn" id="5_xw01p"]
+[ext_resource type="Script" uid="uid://hwl1a3d4oayi" path="res://Scripts/options.gd" id="6_c1kw2"]
+[ext_resource type="PackedScene" uid="uid://bp8dchgtqmj3e" path="res://Opponent/java_enemy.tscn" id="7_kkal1"]
+[ext_resource type="PackedScene" uid="uid://dwexyn66krlf" path="res://player/java_player.tscn" id="8_vqxab"]
+[ext_resource type="PackedScene" uid="uid://d4kh5lhm8k6ck" path="res://Html Scenes/Singleplayer/html_question_battle.tscn" id="9_e13le"]
+[ext_resource type="PackedScene" uid="uid://b0ay65rdnltk5" path="res://Scenes/pause_menu.tscn" id="10_melda"]
+[ext_resource type="Resource" uid="uid://gx8dcvf4hj8u" path="res://Scripts/Resource/varied/themes/java themes/JavaSingleplayerTheme.tres" id="11_tquil"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2cybh"]
+font = ExtResource("4_mi5wd")
+font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ms847"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f4ggb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wb0gu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_84vmf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xdap8"]
+
+[sub_resource type="Theme" id="Theme_wfsx0"]
+Button/font_sizes/font_size = 40
+Button/styles/disabled = SubResource("StyleBoxEmpty_ms847")
+Button/styles/focus = SubResource("StyleBoxEmpty_f4ggb")
+Button/styles/hover = SubResource("StyleBoxEmpty_wb0gu")
+Button/styles/normal = SubResource("StyleBoxEmpty_84vmf")
+Button/styles/pressed = SubResource("StyleBoxEmpty_xdap8")
+
+[node name="Java_battle" type="Control" unique_id=901000669]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vqxab")
+
+[node name="Background_Sprite" type="Sprite2D" parent="." unique_id=1251953448]
+position = Vector2(961.667, 540)
+scale = Vector2(6, 6)
+script = ExtResource("1_kkal1")
+
+[node name="BattleLayout" type="CanvasLayer" parent="." unique_id=2099750144]
+
+[node name="Battle" type="Control" parent="BattleLayout" unique_id=1976049845]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_vqxab")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bottom" type="HBoxContainer" parent="BattleLayout/Battle" unique_id=1313826600]
+custom_minimum_size = Vector2(870, 240)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -511.0
+offset_top = -266.0
+offset_right = 511.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Enemy" parent="BattleLayout/Battle/Bottom" unique_id=1112541334 instance=ExtResource("3_tquil")]
+layout_mode = 2
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleLayout/Battle/Bottom/Enemy" unique_id=1060787004]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 784.0
+offset_top = -740.0
+offset_right = 948.0
+offset_bottom = -740.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer" unique_id=1537223733]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer/VBoxContainer" unique_id=1645202029]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("4_mi5wd")
+theme_override_font_sizes/font_size = 40
+text = "ENEMY"
+horizontal_alignment = 2
+
+[node name="HealthBar" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer/VBoxContainer" unique_id=1586567242 instance=ExtResource("5_xw01p")]
+layout_mode = 2
+show_percentage = true
+
+[node name="Player" parent="BattleLayout/Battle/Bottom" unique_id=648900851 instance=ExtResource("3_tquil")]
+layout_mode = 2
+size_flags_stretch_ratio = 1.5
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleLayout/Battle/Bottom/Player" unique_id=1219159664]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -744.0
+offset_top = -737.0
+offset_right = -744.0
+offset_bottom = -737.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleLayout/Battle/Bottom/Player/MarginContainer" unique_id=1330878643]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=841181333]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("4_mi5wd")
+theme_override_font_sizes/font_size = 40
+text = "PLAYER"
+
+[node name="HealthBar" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=2015185826 instance=ExtResource("5_xw01p")]
+layout_mode = 2
+value = 150.0
+show_percentage = true
+
+[node name="MagicCooldownLabel" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1402268192]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+label_settings = SubResource("LabelSettings_2cybh")
+
+[node name="UltimateCooldownLabel" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1594459614]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="DefendCooldownLabel" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1024438166]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="PlayerTurnTimerLabel" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1672362108]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Time: 35s"
+label_settings = SubResource("LabelSettings_2cybh")
+
+[node name="Options" parent="BattleLayout/Battle" unique_id=1338429218 instance=ExtResource("3_tquil")]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 0
+offset_left = 586.0
+offset_top = 813.0
+offset_right = 826.0
+offset_bottom = 1053.0
+size_flags_stretch_ratio = 1.5
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Options" type="VBoxContainer" parent="BattleLayout/Battle/Options" unique_id=78331290]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+script = ExtResource("6_c1kw2")
+
+[node name="Fight" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=144336412]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Magic")
+theme = SubResource("Theme_wfsx0")
+text = "FIGHT"
+
+[node name="Magic" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=1890513226]
+layout_mode = 2
+text = "MAGIC"
+
+[node name="Defend" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=1413193933]
+layout_mode = 2
+text = "DEFEND"
+
+[node name="Ultimate" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=681626510]
+layout_mode = 2
+text = "ULTIMATE"
+
+[node name="Java Enemy" parent="BattleLayout" unique_id=1777358082 instance=ExtResource("7_kkal1")]
+position = Vector2(1700, 660)
+scale = Vector2(1.5, 1.5)
+
+[node name="Java Player" parent="BattleLayout" unique_id=361687627 instance=ExtResource("8_vqxab")]
+position = Vector2(295, 660)
+scale = Vector2(1.5, 1.5)
+
+[node name="Control" parent="BattleLayout" unique_id=818718884 instance=ExtResource("9_e13le")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -39.0
+offset_bottom = -39.0
+quiz = ExtResource("11_tquil")
+
+[node name="Lose" type="Label" parent="BattleLayout" unique_id=1417291060]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -7.5
+offset_right = 20.0
+offset_bottom = 7.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_vqxab")
+theme_override_font_sizes/font_size = 100
+text = "YOU LOSE!"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Win" type="Label" parent="BattleLayout" unique_id=1734592869]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -7.5
+offset_right = 20.0
+offset_bottom = 7.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_vqxab")
+theme_override_font_sizes/font_size = 100
+text = "YOU WIN!"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Info" type="Label" parent="BattleLayout" unique_id=68282047]
+custom_minimum_size = Vector2(400, 80)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.0
+offset_top = 9.0
+offset_right = 255.0
+offset_bottom = 111.0
+grow_horizontal = 2
+theme = ExtResource("2_vqxab")
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_font_sizes/font_size = 50
+text = "PLAYER'S TURN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestionInfo" type="Label" parent="BattleLayout" unique_id=1653170630]
+visible = false
+custom_minimum_size = Vector2(645, 150)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -322.5
+offset_top = -542.0
+offset_right = 322.5
+offset_bottom = -92.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_vqxab")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 60
+text = "ENEMY GOT IT RIGHT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseMenu" parent="BattleLayout" unique_id=836059466 instance=ExtResource("10_melda")]
+visible = false

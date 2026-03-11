@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bu08osehxq51w"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_pgde4"]
+
+[resource]
+script = ExtResource("1_pgde4")
+Question_Info = "You started a title with <h2>Hello World. What is the correct way to close it so the rest of your page doesn't accidentally become a title too?"
+options = Array[String](["</h2>", "<h2/>", "<close h2>", "</heading2>"])
+correct = "</h2>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

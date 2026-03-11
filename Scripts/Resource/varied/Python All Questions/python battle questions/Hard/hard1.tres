@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://fe1muybkiwtm"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_uiykj"]
+
+[resource]
+script = ExtResource("1_uiykj")
+Question_Info = "Which statement about Python variables and data types is TRUE?"
+options = Array[String](["Variables store values directly.", "Immutable types cannot be reassigned.", "Same values always share memory.", "Variable types are decided at runtime."])
+correct = "Variable types are decided at runtime."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

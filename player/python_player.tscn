@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c13mrxxa8qvam"]
+
+[ext_resource type="Texture2D" uid="uid://dhjxeq77k85a4" path="res://Art Assets/python snik/python-black.png" id="1_lmuyo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qpx1q"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_a7ycx"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+
+[node name="Python Player" type="CharacterBody2D" unique_id=438329291]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1540854221]
+position = Vector2(-3, 21)
+scale = Vector2(6, 6)
+shape = SubResource("CircleShape2D_qpx1q")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1861989437]
+scale = Vector2(6, 6)
+texture = ExtResource("1_lmuyo")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="." unique_id=1973248922]
+replication_config = SubResource("SceneReplicationConfig_a7ycx")

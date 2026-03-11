@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://voqslt8fb423"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_ynw4i"]
+
+[resource]
+script = ExtResource("1_ynw4i")
+Question_Info = "In the value `font-size: 20px;`, what does the \"px\" stand for?"
+options = Array[String](["Pieces", "Pixels", "Position", "Pointers"])
+correct = "Pixels"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

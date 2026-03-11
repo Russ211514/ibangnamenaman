@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://h0tl8yhr3nsp"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_8baiy"]
+
+[resource]
+script = ExtResource("1_8baiy")
+Question_Info = "You are organizing a \"Boss Battle\" section. You want a subtitle that is smaller than the main <h1> title but still bigger than a tiny <h6>. Which tag is a good middle-ground?"
+options = Array[String](["<html>", "<header>", "<h3>", "<p>"])
+correct = "<h3>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://baq77oy0cwoqq"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_x2jhl"]
+
+[resource]
+script = ExtResource("1_x2jhl")
+Question_Info = "If the style attribute is the container for your instructions and color is the property, what is the technical term for the specific color choice (such as \"red\" or \"green\")?"
+options = Array[String](["The Element", "The Attribute", "The Declaration", "The Value"])
+correct = "The Value"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

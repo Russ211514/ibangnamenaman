@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://cpncnryo6ebg6"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_wai5e"]
+
+[resource]
+script = ExtResource("1_wai5e")
+Question_Info = "Which of these tags would be considered \"Broken Code\" if you tried to put text content inside of it?"
+options = Array[String](["`<h1>`", "`<p>`", "`<img>`", "`<a>`"])
+correct = "`<img>`"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

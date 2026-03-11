@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://koxqviqjejqf"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_xrjos"]
+
+[resource]
+script = ExtResource("1_xrjos")
+Question_Info = "Which operator is used to add numbers in Java?"
+options = Array[String](["+", "-", "*", "/"])
+correct = "+"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

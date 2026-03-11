@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://256dfbcnle0a"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_r78vl"]
+
+[resource]
+script = ExtResource("1_r78vl")
+Question_Info = "Every webpage should usually have only one of these tags to represent the single most important title of the entire page. Which one is it?"
+options = Array[String](["<h1>", "<h3>", "<p>", "<h6>"])
+correct = "<h1>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

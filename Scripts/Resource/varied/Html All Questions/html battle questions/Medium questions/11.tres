@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://byx0f0yqgwpiw"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_cq1jf"]
+
+[resource]
+script = ExtResource("1_cq1jf")
+Question_Info = "If you place a `<title>` tag inside the `<body>` instead of the `<head>`, what will likely happen?"
+options = Array[String](["The title will show up as the main heading on the page.", "The browser will ignore it or it won't function as the tab name.", "The website will crash.", "The title will appear in the very center of the page."])
+correct = "The browser will ignore it or it won't function as the tab name."
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bwdy5hb87wc0a"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_f1855"]
+
+[resource]
+script = ExtResource("1_f1855")
+Question_Info = "If you want to write a short story or a simple sentence on your page, which tag do you use to create a \"Paragraph\"?"
+options = Array[String](["<h1>", "<html>", "<body>", "<p>"])
+correct = "<p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

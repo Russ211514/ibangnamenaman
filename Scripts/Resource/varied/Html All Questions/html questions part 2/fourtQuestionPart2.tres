@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://burl4nsafl8x3"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_qin1w"]
+
+[resource]
+script = ExtResource("1_qin1w")
+Question_Info = "Which tag inside the <head> controls the name shown on the browser tab?"
+options = Array[String](["<body>", "<html>", "<title>", "<tab>"])
+correct = "<title>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://cyf8savkwg60o"]
+
+[ext_resource type="Texture2D" uid="uid://djahbpuxvstk" path="res://Art Assets/Java Question Images/Screenshot 2026-02-17 003225.png" id="1_33vnj"]
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_k50e5"]
+
+[resource]
+script = ExtResource("1_k50e5")
+Question_Info = "What is the output of this code?"
+type = 1
+question_image = ExtResource("1_33vnj")
+options = Array[String](["2", "3", "1", "Error"])
+correct = "3"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

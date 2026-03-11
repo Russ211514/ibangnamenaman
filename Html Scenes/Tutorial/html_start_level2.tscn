@@ -1,0 +1,232 @@
+[gd_scene format=3 uid="uid://ci1t06cqrjj3a"]
+
+[ext_resource type="Script" uid="uid://bx768vabl6s0g" path="res://Scripts/html_start_level2.gd" id="1_3vi56"]
+[ext_resource type="Texture2D" uid="uid://cchw0nrt5a14n" path="res://Art Assets/backgrounds/bground.png" id="2_f8j0c"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="3_t7o3i"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="4_gri7k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ccc6h"]
+texture = ExtResource("2_f8j0c")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yiwnr"]
+texture = ExtResource("4_gri7k")
+expand_margin_left = 15.0
+expand_margin_right = 15.0
+region_rect = Rect2(67.68807, 53.68726, 184.39017, 72.433304)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4ndar"]
+texture = ExtResource("4_gri7k")
+expand_margin_left = 20.0
+expand_margin_top = 10.0
+expand_margin_right = 20.0
+expand_margin_bottom = 10.0
+region_rect = Rect2(67.79819, 53.921593, 184.30623, 72.180504)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_agnad"]
+texture = ExtResource("4_gri7k")
+texture_margin_left = 20.0
+texture_margin_top = 10.0
+texture_margin_right = 20.0
+texture_margin_bottom = 15.0
+region_rect = Rect2(67.177315, 53.123344, 185.42703, 73.555244)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cva24"]
+texture = ExtResource("4_gri7k")
+expand_margin_top = 10.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[node name="Control" type="Control" unique_id=464605565]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3vi56")
+
+[node name="bg" type="Panel" parent="." unique_id=1069304765]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ccc6h")
+
+[node name="Label" type="Label" parent="." unique_id=131144453]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -839.0
+offset_top = -446.0
+offset_right = 839.0
+offset_bottom = -322.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("3_t7o3i")
+theme_override_font_sizes/font_size = 140
+text = " HEADINGS (h1 to h6)"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Question" type="Label" parent="." unique_id=864750089]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -513.0
+offset_top = -155.0
+offset_right = 513.0
+offset_bottom = 208.2782
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_t7o3i")
+theme_override_font_sizes/font_size = 60
+text = "HTML headings are titles or subtitles that you want to display on a webpage. There are six levels of headings: <h1> to <h6>. <h1> defines the most important heading (the largest), while <h6> defines the least important heading (the smallest)."
+autowrap_mode = 2
+
+[node name="Understand" type="Button" parent="." unique_id=486992983]
+layout_mode = 0
+offset_left = 452.0
+offset_top = 867.0
+offset_right = 897.0
+offset_bottom = 958.05145
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_t7o3i")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_yiwnr")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_yiwnr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yiwnr")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_yiwnr")
+text = "I dont understand"
+autowrap_mode = 2
+
+[node name="Next" type="Button" parent="." unique_id=2117390046]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 879.582
+offset_right = 1387.0
+offset_bottom = 948.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_t7o3i")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_4ndar")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_4ndar")
+theme_override_styles/hover = SubResource("StyleBoxTexture_4ndar")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_4ndar")
+text = "NEXT"
+
+[node name="Explanation" type="Panel" parent="." unique_id=963487092]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -312.65027
+offset_top = -239.0
+offset_right = 292.65015
+offset_bottom = 317.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Explanation" unique_id=1039243369]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -113.0
+offset_top = 6.0
+offset_right = 113.0
+offset_bottom = 37.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_t7o3i")
+theme_override_font_sizes/font_size = 35
+text = "SIMPLE EXPLANATION"
+
+[node name="X button" type="Button" parent="Explanation" unique_id=727199884]
+layout_mode = 0
+offset_left = 567.65027
+offset_top = -22.0
+offset_right = 631.65027
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_t7o3i")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_agnad")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_agnad")
+theme_override_styles/hover = SubResource("StyleBoxTexture_agnad")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_agnad")
+text = "X"
+
+[node name="simple explanation" type="Label" parent="Explanation" unique_id=323563349]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.00003
+offset_top = -219.0
+offset_right = 301.00006
+offset_bottom = 277.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_t7o3i")
+theme_override_font_sizes/font_size = 35
+text = "Think of Headings like Megaphones:
+<h1> (The Giant Megaphone): Use this for your biggest, most important shout! Like the name of your game or the title of a book.
+<h2> to <h6> (The Smaller Megaphones): As the numbers get bigger, the sound gets quieter and the text gets smaller. Use these for sub-titles or smaller labels."
+autowrap_mode = 2
+
+[node name="buttons" type="VBoxContainer" parent="." unique_id=777129199]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 121.0
+offset_top = -173.0
+offset_right = 306.5263
+offset_bottom = -120.0
+grow_vertical = 0
+theme_override_constants/separation = 30
+
+[node name="Back" type="Button" parent="buttons" unique_id=1260674094]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_t7o3i")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_cva24")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cva24")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cva24")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_cva24")
+text = "BACK"
+
+[connection signal="pressed" from="Understand" to="." method="_on_understand_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Explanation/X button" to="." method="_on_x_button_pressed"]
+[connection signal="pressed" from="buttons/Back" to="." method="_on_back_pressed"]

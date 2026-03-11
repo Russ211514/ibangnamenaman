@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://ki7ioafnnc46"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_alvcd"]
+
+[resource]
+script = ExtResource("1_alvcd")
+Question_Info = "What is true about polymorphism in Java?"
+options = Array[String](["One class can extend multiple classes", "One method name can have multiple behaviors", "Variables can change type at runtime", "All methods must be abstract"])
+correct = "One method name can have multiple behaviors"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

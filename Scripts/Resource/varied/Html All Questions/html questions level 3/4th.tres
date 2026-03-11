@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dqh8ln3g47t77"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_g55yg"]
+
+[resource]
+script = ExtResource("1_g55yg")
+Question_Info = "Which of the following examples follows the correct HTML syntax for changing the text color of a paragraph?"
+options = Array[String](["<p style=\"color=blue;\">", "<p style=\"color:blue;\">", "<p style:color=\"blue\">", "<p color=\"blue;\">"])
+correct = "<p style=\"color:blue;\">"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

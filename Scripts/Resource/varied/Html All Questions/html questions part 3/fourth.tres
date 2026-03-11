@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://s6jeoep4yye6"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_0nii5"]
+
+[resource]
+script = ExtResource("1_0nii5")
+Question_Info = " An \"Element\" refers to which part of the code?"
+options = Array[String](["Only the start tag", "Only the text in the middle", "Only the end tag", "The whole unit from start tag to end tag"])
+correct = "The whole unit from start tag to end tag"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

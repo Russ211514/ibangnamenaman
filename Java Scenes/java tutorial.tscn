@@ -1,0 +1,119 @@
+[gd_scene format=3 uid="uid://b0q6n0ab1uke8"]
+
+[ext_resource type="Script" uid="uid://dlnrnq10tc8qg" path="res://Scripts/java_tutorial.gd" id="1_cs1nd"]
+[ext_resource type="Texture2D" uid="uid://cchw0nrt5a14n" path="res://Art Assets/backgrounds/bground.png" id="1_eij7a"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="2_cs1nd"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="3_yyl26"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5612y"]
+texture = ExtResource("1_eij7a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ujbbc"]
+texture = ExtResource("3_yyl26")
+texture_margin_left = 20.0
+texture_margin_top = 10.0
+texture_margin_right = 20.0
+texture_margin_bottom = 15.0
+region_rect = Rect2(67.867714, 53.897186, 184.20135, 72.21155)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vla3v"]
+texture = ExtResource("3_yyl26")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vdjfk"]
+texture = ExtResource("3_yyl26")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xlq8b"]
+texture = ExtResource("3_yyl26")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hu3ce"]
+texture = ExtResource("3_yyl26")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cs1nd")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_5612y")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -586.0
+offset_top = -448.0
+offset_right = 586.0
+offset_bottom = -228.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("2_cs1nd")
+theme_override_font_sizes/font_size = 220
+text = "TUTORIAL"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -430.0
+offset_top = -56.5
+offset_right = 430.0
+offset_bottom = 56.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_cs1nd")
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxTexture_ujbbc")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ujbbc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ujbbc")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_ujbbc")
+text = "START TUTORIAL"
+
+[node name="Back" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1646.0
+offset_top = 897.0
+offset_right = 1791.0
+offset_bottom = 967.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_cs1nd")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_vla3v")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_vdjfk")
+theme_override_styles/hover = SubResource("StyleBoxTexture_xlq8b")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_hu3ce")
+text = "BACK"
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

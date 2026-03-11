@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cngb10sn5no7l"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_xf8u1"]
+
+[resource]
+script = ExtResource("1_xf8u1")
+Question_Info = "What is the very first line of code you should write to tell the browser you are using HTML5?"
+options = Array[String](["<!DOCTYPE html>", "<html>", "<title>", "<head>"])
+correct = "<!DOCTYPE html>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

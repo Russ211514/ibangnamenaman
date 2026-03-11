@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cr1hvs5y6alvd"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_setre"]
+
+[resource]
+script = ExtResource("1_setre")
+Question_Info = "If a class is named `Warrior`, what must the filename be?"
+options = Array[String](["warrior.txt", "Warrior.java", "Main.java.", "warrior.class"])
+correct = "Warrior.java"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

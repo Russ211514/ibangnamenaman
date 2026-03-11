@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://bagwhlekc2p8k"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_25ul6"]
+
+[resource]
+script = ExtResource("1_25ul6")
+Question_Info = "Which heading tag is used for the most important, largest title on a webpage?"
+options = Array[String](["`<h6>`", "`<h3>`", "`<h1>`", "`<p>`"])
+correct = "`<h1>`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

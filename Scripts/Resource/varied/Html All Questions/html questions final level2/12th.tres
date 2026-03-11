@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://coma4cq80w30x"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_vsvlb"]
+
+[resource]
+script = ExtResource("1_vsvlb")
+Question_Info = "Look at this code snippet: <h1>Welcome to my Game</p>. Why is the browser confused?"
+options = Array[String](["You can't put text inside an <h1> tag.", "The title is too long for the browser to read.", "The tags don't match; it starts with a title but tries to close with a paragraph.", "The text needs to be in all capital letters."])
+correct = "The tags don't match; it starts with a title but tries to close with a paragraph."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

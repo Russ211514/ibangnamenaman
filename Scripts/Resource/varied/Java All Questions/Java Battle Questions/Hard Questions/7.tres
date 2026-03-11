@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://d26m575qe2s7d"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_b82wj"]
+
+[resource]
+script = ExtResource("1_b82wj")
+Question_Info = "Which statement is TRUE about constructors?"
+options = Array[String](["Constructors can have return type void", "Constructors are called automatically when new is used", "Parameterized constructors prevent object creation", "Constructor names can differ from the class name"])
+correct = "Constructors are called automatically when new is used"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dqselgra1b1bp"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_w00ir"]
+
+[resource]
+script = ExtResource("1_w00ir")
+Question_Info = "You want to apply a yellow highlight to the entire rectangular area behind a specific sentence. Which property is required?"
+options = Array[String](["color", "background-color", "fill-area", "box-color"])
+correct = "background-color"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

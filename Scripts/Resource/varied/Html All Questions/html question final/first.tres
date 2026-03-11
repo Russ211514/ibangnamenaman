@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d61ghsgke8a4"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_irwhj"]
+
+[resource]
+script = ExtResource("1_irwhj")
+Question_Info = "You are explaining to a friend how a website is built. Which of these best describes the role of HTML?"
+options = Array[String](["It handles the math and logic of the site.", "It acts as the instruction manual that describes the structure.", "It is a database used to store player passwords.", "It is used to create animations and moving graphics."])
+correct = "It acts as the instruction manual that describes the structure."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dmtgr3pay7q3d"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_pitlp"]
+
+[resource]
+script = ExtResource("1_pitlp")
+Question_Info = "The term \"Initialization\" refers to:"
+options = Array[String](["Deleting a variable.", "Naming a variable.", "Assigning the first value to a variable.", "Printing a variable."])
+correct = "Assigning the first value to a variable."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

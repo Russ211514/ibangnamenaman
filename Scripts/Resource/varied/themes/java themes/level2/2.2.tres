@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="QuizTheme" format=3 uid="uid://5rwuvrpmu3mw"]
+
+[ext_resource type="Script" uid="uid://g6r3uoyeu1rp" path="res://Scripts/resources/theme.gd" id="1_34n4h"]
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="2_5yaxk"]
+
+[resource]
+script = ExtResource("1_34n4h")
+metadata/_custom_type_script = "uid://g6r3uoyeu1rp"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bq0pxjstblbk0"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_g21ja"]
+
+[resource]
+script = ExtResource("1_g21ja")
+Question_Info = "What is the correct output for: `System.out.print(\"Hello\"); System.out.print(\"World\");`?"
+options = Array[String](["Hello World", "HelloWorld", "WorldHello", "Error"])
+correct = "HelloWorld"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dxxj2pqtubkcq"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_3q5e5"]
+
+[resource]
+script = ExtResource("1_3q5e5")
+Question_Info = "Which tag is an \"Empty Element\" used to start a new line without a closing partner?"
+options = Array[String](["`<p>`", "`<br>`", "`<body>`", "`<h1>`"])
+correct = "`<br>`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

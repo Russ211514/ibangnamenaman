@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dgy8a63r7w113"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_ydugd"]
+
+[resource]
+script = ExtResource("1_ydugd")
+Question_Info = "If you remove all the <p> tags from your story and just leave the raw text, how will the browser show it?"
+options = Array[String](["It will look exactly the same as before.", "All the sentences will run together in one giant, messy block.", "The browser will delete the text automatically.", "The text will become bold and purple."])
+correct = "All the sentences will run together in one giant, messy block."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

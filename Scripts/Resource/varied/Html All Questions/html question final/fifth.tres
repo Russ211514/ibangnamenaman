@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://xm75lo3p5iej"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_x5yh8"]
+
+[resource]
+script = ExtResource("1_x5yh8")
+Question_Info = "You want your website tab to say \"My Awesome Game\" instead of just \"Untitled.\" Which tag inside the <head> section handles this \"Nametag\"?"
+options = Array[String](["<html>", "<h1>", "<title>", "<meta>"])
+correct = "<title>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

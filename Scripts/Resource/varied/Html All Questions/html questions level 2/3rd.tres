@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cni4vwuhm7ixl"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_64wvi"]
+
+[resource]
+script = ExtResource("1_64wvi")
+Question_Info = "You want to make your website look organized. Why shouldn't you use the <h1> tag for every single sentence on the page?"
+options = Array[String](["The page will become messy and hard to read.", "The website will crash if you use it too much.", "Using <h1> more than once is against the law.", "The text will become invisible."])
+correct = "The page will become messy and hard to read."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

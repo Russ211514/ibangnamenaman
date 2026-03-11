@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://bffq8hvcw0g8w"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_neg5h"]
+
+[resource]
+script = ExtResource("1_neg5h")
+Question_Info = "What does the break statement do in a loop?"
+options = Array[String](["Skips the current iteration", "Stops the loop immediately", "Restarts the loop", "Pauses the loop"])
+correct = "Stops the loop immediately"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

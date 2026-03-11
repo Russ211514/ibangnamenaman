@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://o1iavyigx1aa"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_gawa2"]
+
+[resource]
+script = ExtResource("1_gawa2")
+Question_Info = "In a proper HTML \"Skeleton,\" where should the <body> tag be placed?"
+options = Array[String](["Inside the <head> tag.", "Before the <html> tag.", "After the <head> tag, both staying inside the <html> tags.", "Inside the <title> tag."])
+correct = "After the <head> tag, both staying inside the <html> tags."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

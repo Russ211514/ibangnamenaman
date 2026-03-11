@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dj41byegykdhq"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_igwjv"]
+
+[resource]
+script = ExtResource("1_igwjv")
+Question_Info = "Content Grouping Question: If you want to put a group of sentences together so they don't get mixed up with your titles, which tag acts like a \"fence\" for your text?"
+options = Array[String](["<fence>", "<h1>", "<p>", "<group>"])
+correct = "<p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

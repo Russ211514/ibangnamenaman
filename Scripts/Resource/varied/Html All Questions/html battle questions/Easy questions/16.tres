@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://o1bl8t0f1g25"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_5aitr"]
+
+[resource]
+script = ExtResource("1_5aitr")
+Question_Info = "Which attribute is required to tell the browser the file path or URL of an image?"
+options = Array[String](["`href`", "`link`", "`src`", "`alt`"])
+correct = "`src`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

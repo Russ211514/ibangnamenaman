@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://0owk0nxgvexg"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_m54fv"]
+
+[resource]
+script = ExtResource("1_m54fv")
+Question_Info = "What is the correct syntax to declare a variable in Java?"
+options = Array[String](["value = name type;", "type variableName = value;", "variableName type = value;", "set variableName to value;"])
+correct = "type variableName = value;"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

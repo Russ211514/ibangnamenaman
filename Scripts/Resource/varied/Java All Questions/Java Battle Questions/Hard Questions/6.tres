@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://cfums8ikgcxjj"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_pp6v4"]
+
+[resource]
+script = ExtResource("1_pp6v4")
+Question_Info = "If an array has 5 elements, which of these causes runtime error?"
+options = Array[String](["arr[0]", "arr[4]", "arr[5]", "arr.length"])
+correct = "arr[5]"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

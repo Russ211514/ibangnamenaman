@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://d4kh5lhm8k6ck"]
+
+[ext_resource type="Script" uid="uid://b1dxjb7xuykhk" path="res://Scripts/controllers/html_game_controller.gd" id="1_c23ak"]
+[ext_resource type="Resource" uid="uid://cdqxhyvxq4mv6" path="res://Scripts/Resource/varied/themes/html thems/HtmlBattleTheme.tres" id="2_4q5ys"]
+[ext_resource type="Theme" uid="uid://2q3vbk6bmh2r" path="res://Themes/default_theme.tres" id="2_c23ak"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6jt0b"]
+
+[node name="HtmlQuestion" type="Control" unique_id=818718884]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c23ak")
+quiz = ExtResource("2_4q5ys")
+color_right = Color(0, 1, 0, 1)
+color_wrong = Color(1, 0, 0, 1)
+
+[node name="Question" type="VBoxContainer" parent="." unique_id=1149126959]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -668.0
+offset_top = -370.0
+offset_right = 668.0
+offset_bottom = 119.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="QuestionPanel" type="Panel" parent="Question" unique_id=1092384378]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_6jt0b")
+
+[node name="Question" type="Label" parent="Question/QuestionPanel" unique_id=884205701]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -665.0
+offset_top = -209.5
+offset_right = 665.0
+offset_bottom = 209.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 60
+text = "Question will appear here."
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Image" type="Panel" parent="Question" unique_id=1097993070]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+
+[node name="ImageHolder" type="TextureRect" parent="Question/Image" unique_id=1719198856]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HtmlQuestion" type="VBoxContainer" parent="." unique_id=1494800806]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -457.0
+offset_top = 128.0
+offset_right = 457.0
+offset_bottom = 302.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="A" type="Button" parent="HtmlQuestion" unique_id=1979590953]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_c23ak")
+theme_override_constants/outline_size = 10
+action_mode = 0
+text = "Choice A"
+
+[node name="B" type="Button" parent="HtmlQuestion" unique_id=296726188]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_c23ak")
+theme_override_constants/outline_size = 10
+action_mode = 0
+text = "Choice B"
+
+[node name="C" type="Button" parent="HtmlQuestion" unique_id=1530375299]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_c23ak")
+theme_override_constants/outline_size = 10
+action_mode = 0
+text = "Choice C"
+
+[node name="D" type="Button" parent="HtmlQuestion" unique_id=1887404662]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("2_c23ak")
+theme_override_constants/outline_size = 10
+action_mode = 0
+text = "Choice D"

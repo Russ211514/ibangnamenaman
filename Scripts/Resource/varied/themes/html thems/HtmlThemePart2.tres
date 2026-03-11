@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuizTheme" format=3 uid="uid://xrvxumkhgckf"]
+
+[ext_resource type="Script" uid="uid://g6r3uoyeu1rp" path="res://Scripts/resources/theme.gd" id="1_xn7d1"]
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="2_imsgw"]
+[ext_resource type="Resource" uid="uid://c3s3igm8qhxt8" path="res://Scripts/Resource/varied/Html All Questions/html questions part 2/first_Question_Part2.tres" id="3_55ibb"]
+[ext_resource type="Resource" uid="uid://de8fpg8ebn1jb" path="res://Scripts/Resource/varied/Html All Questions/html questions part 2/secondQuestionPart2.tres" id="4_b2m3e"]
+[ext_resource type="Resource" uid="uid://cjxqsbnyqdlx5" path="res://Scripts/Resource/varied/Html All Questions/html questions part 2/thirdQuestionPart2.tres" id="5_y8yek"]
+[ext_resource type="Resource" uid="uid://burl4nsafl8x3" path="res://Scripts/Resource/varied/Html All Questions/html questions part 2/fourtQuestionPart2.tres" id="6_b2m3e"]
+[ext_resource type="Resource" uid="uid://bl48ckcmivc74" path="res://Scripts/Resource/varied/Html All Questions/html questions part 2/fifthQuestionPart2.tres" id="7_tlrws"]
+
+[resource]
+script = ExtResource("1_xn7d1")
+theme = Array[ExtResource("2_imsgw")]([ExtResource("3_55ibb"), ExtResource("4_b2m3e"), ExtResource("5_y8yek"), ExtResource("6_b2m3e"), ExtResource("7_tlrws")])
+metadata/_custom_type_script = "uid://g6r3uoyeu1rp"

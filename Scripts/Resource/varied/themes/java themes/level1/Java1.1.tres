@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuizTheme" format=3 uid="uid://bjx53u48m41kd"]
+
+[ext_resource type="Script" uid="uid://g6r3uoyeu1rp" path="res://Scripts/resources/theme.gd" id="1_4cjj2"]
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="2_58tix"]
+[ext_resource type="Resource" uid="uid://cr1hvs5y6alvd" path="res://Scripts/Resource/varied/Java All Questions/java questions/level1/1.1/first_question.tres" id="3_8vjvd"]
+[ext_resource type="Resource" uid="uid://c6dhrc8d7x58y" path="res://Scripts/Resource/varied/Java All Questions/java questions/level1/1.1/second_question.tres" id="4_o3bl4"]
+[ext_resource type="Resource" uid="uid://d4iibbldnevwc" path="res://Scripts/Resource/varied/Java All Questions/java questions/level1/1.1/third_question.tres" id="5_lndml"]
+[ext_resource type="Resource" uid="uid://d0ahrlplh45jm" path="res://Scripts/Resource/varied/Java All Questions/java questions/level1/1.1/fourth_question.tres" id="6_h7gld"]
+[ext_resource type="Resource" uid="uid://d2bjp30k6wbm2" path="res://Scripts/Resource/varied/Java All Questions/java questions/level1/1.1/fifth_question.tres" id="7_600op"]
+
+[resource]
+script = ExtResource("1_4cjj2")
+theme = Array[ExtResource("2_58tix")]([ExtResource("3_8vjvd"), ExtResource("4_o3bl4"), ExtResource("5_lndml"), ExtResource("6_h7gld"), ExtResource("7_600op")])
+metadata/_custom_type_script = "uid://g6r3uoyeu1rp"

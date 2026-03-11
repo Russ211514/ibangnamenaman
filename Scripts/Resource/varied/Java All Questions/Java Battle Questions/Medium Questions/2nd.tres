@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://bgwhp35562w3y"]
+
+[ext_resource type="Texture2D" uid="uid://dum5vs1blxbsb" path="res://Art Assets/Java Question Images/Screenshot 2026-02-17 001855.png" id="1_oarvx"]
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_vro43"]
+
+[resource]
+script = ExtResource("1_vro43")
+Question_Info = "What will this print?"
+type = 1
+question_image = ExtResource("1_oarvx")
+options = Array[String](["A", "B", "C", "Error"])
+correct = "B"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

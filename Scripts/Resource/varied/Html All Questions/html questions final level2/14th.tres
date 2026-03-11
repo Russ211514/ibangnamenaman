@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://btjale7fe4evu"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_g4ota"]
+
+[resource]
+script = ExtResource("1_g4ota")
+Question_Info = "You have an <h1> title for your game. You then have a section called \"Characters\" and a smaller note called \"Class Skills.\" What is the most logical order for these tags?"
+options = Array[String](["<h1>, then <h4>, then <h2>", "<h6>, then <h5>, then <h4>", "<h1>, then <h2>, then <h3>", "<p>, then <p>, then <p>"])
+correct = "<h1>, then <h2>, then <h3>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

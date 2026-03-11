@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://6l28fixu2utt"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_17f4t"]
+
+[resource]
+script = ExtResource("1_17f4t")
+Question_Info = "In HTML, which of these statements about the \"Sticker Rule\" (heading numbers) is true?"
+options = Array[String](["<h6> is much larger and more important than <h3>.", "<h1> is the smallest whisper.", "A bigger number means a smaller heading size.", "The numbers 1 through 6 all result in the same size."])
+correct = "A bigger number means a smaller heading size."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

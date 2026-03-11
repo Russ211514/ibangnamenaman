@@ -1,0 +1,326 @@
+[gd_scene format=3 uid="uid://cho3br26nvh8q"]
+
+[ext_resource type="Texture2D" uid="uid://cchw0nrt5a14n" path="res://Art Assets/backgrounds/bground.png" id="1_1sdp8"]
+[ext_resource type="Script" uid="uid://d08hmiejimpj0" path="res://Scripts/menu_&_server.gd" id="1_r2jap"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="2_r2jap"]
+[ext_resource type="Texture2D" uid="uid://cxf8ehq37nht0" path="res://Art Assets/host_join_game_panel.png" id="3_2vj8k"]
+[ext_resource type="Texture2D" uid="uid://fh6a7umyqk0l" path="res://Art Assets/buttons/copyCode button.png" id="4_n4m24"]
+[ext_resource type="Texture2D" uid="uid://dws5dgwtiwtwh" path="res://Art Assets/buttons/host_game_button.png" id="5_c6crc"]
+[ext_resource type="Texture2D" uid="uid://b01opm63luqfi" path="res://Art Assets/buttons/join_game_button.png" id="6_n6dkn"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="7_k2bq0"]
+[ext_resource type="Theme" uid="uid://2q3vbk6bmh2r" path="res://Themes/default_theme.tres" id="8_41o3u"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p75m8"]
+texture = ExtResource("3_2vj8k")
+region_rect = Rect2(66.78863, 16.963596, 186.54053, 146.24689)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6ep2h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rkh3m"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nkry8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_okbwq"]
+texture = ExtResource("4_n4m24")
+expand_margin_top = 20.0
+expand_margin_right = 80.0
+expand_margin_bottom = 25.0
+region_rect = Rect2(89.96948, 65.87415, 140.13805, 48.172234)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x3emf"]
+texture = ExtResource("5_c6crc")
+expand_margin_left = 80.0
+expand_margin_top = 10.0
+expand_margin_right = 80.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(85.079185, 32.06587, 150.02844, 30.992142)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hm7nv"]
+texture = ExtResource("6_n6dkn")
+expand_margin_left = 80.0
+expand_margin_top = 10.0
+expand_margin_right = 80.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(84.91611, 31.909313, 150.18684, 31.17384)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g2kk1"]
+texture = ExtResource("7_k2bq0")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lp8sa"]
+texture = ExtResource("7_k2bq0")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1lpx2"]
+texture = ExtResource("7_k2bq0")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gth78"]
+texture = ExtResource("7_k2bq0")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[node name="Menu & Server" type="Control" unique_id=521875049]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r2jap")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=2038309346]
+position = Vector2(653, 539)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=446479177]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1266.0
+offset_top = -539.5
+offset_right = 655.0
+offset_bottom = 539.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1sdp8")
+
+[node name="SpawnPoint" type="Marker2D" parent="TextureRect" unique_id=1677736654]
+position = Vector2(307, 563)
+
+[node name="SpawnPoint2" type="Marker2D" parent="TextureRect" unique_id=2112637935]
+position = Vector2(1608, 563)
+
+[node name="RoomLabel" type="Label" parent="." unique_id=1235795785]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -439.0
+offset_top = 108.0
+offset_right = -122.0
+offset_bottom = 161.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 60
+text = "ROOM NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=409898779]
+
+[node name="Title" type="Label" parent="UI" unique_id=2045674628]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -773.0
+offset_top = 100.0
+offset_right = 773.0
+offset_bottom = 232.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 150
+text = "CUSTOM LOBBY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Multiplayer" type="Control" parent="UI" unique_id=373295343]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="UI/Multiplayer" unique_id=720605537]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -346.0
+offset_top = -299.0
+offset_right = 346.0
+offset_bottom = 388.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_p75m8")
+
+[node name="RoomName" type="LineEdit" parent="UI/Multiplayer" unique_id=1924422888]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 723.0
+offset_top = 683.0
+offset_right = 1199.0
+offset_bottom = 732.0
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_6ep2h")
+theme_override_styles/read_only = SubResource("StyleBoxTexture_rkh3m")
+theme_override_styles/focus = SubResource("StyleBoxTexture_nkry8")
+placeholder_text = "Room Name..."
+
+[node name="OIDinput" type="LineEdit" parent="UI/Multiplayer" unique_id=1891336136]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 723.0
+offset_top = 790.0
+offset_right = 1199.0
+offset_bottom = 839.0
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_6ep2h")
+theme_override_styles/read_only = SubResource("StyleBoxTexture_rkh3m")
+theme_override_styles/focus = SubResource("StyleBoxTexture_nkry8")
+placeholder_text = "Room Code..."
+
+[node name="CopyOID" type="Button" parent="UI/Multiplayer" unique_id=1777566001]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -205.0
+offset_top = 51.0
+offset_right = 120.0
+offset_bottom = 91.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxTexture_okbwq")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_okbwq")
+theme_override_styles/hover = SubResource("StyleBoxTexture_okbwq")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_okbwq")
+text = "COPY CODE"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Multiplayer" unique_id=814126674]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.5
+offset_top = -252.0
+offset_right = 162.5
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="Host" type="Button" parent="UI/Multiplayer/VBoxContainer" unique_id=1697828294]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxTexture_x3emf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_x3emf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_x3emf")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_x3emf")
+text = "HOST GAME"
+
+[node name="Join" type="Button" parent="UI/Multiplayer/VBoxContainer" unique_id=710519557]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxTexture_hm7nv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_hm7nv")
+theme_override_styles/hover = SubResource("StyleBoxTexture_hm7nv")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_hm7nv")
+text = "JOIN GAME"
+
+[node name="StartServer" type="Button" parent="UI/Multiplayer/VBoxContainer" unique_id=1350392541]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 45
+text = "START SERVER"
+
+[node name="OnlineID" type="Label" parent="UI/Multiplayer" unique_id=1371049770]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -146.5
+offset_top = -19.0
+offset_right = 146.5
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 50
+text = "LOADING..."
+horizontal_alignment = 1
+
+[node name="Back" type="Button" parent="UI/Multiplayer" unique_id=1485454923]
+layout_mode = 0
+offset_left = 1646.0
+offset_top = 897.0
+offset_right = 1791.0
+offset_bottom = 967.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_r2jap")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_g2kk1")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lp8sa")
+theme_override_styles/hover = SubResource("StyleBoxTexture_1lpx2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_gth78")
+text = "BACK"
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="." unique_id=2129259816]
+_spawnable_scenes = PackedStringArray("uid://dcq8wnaiijaee")
+spawn_path = NodePath("..")
+
+[node name="NetworkInfo" type="Label" parent="." unique_id=1978707886]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -294.0
+offset_top = 174.0
+offset_right = -254.0
+offset_bottom = 218.0
+grow_horizontal = 2
+theme = ExtResource("8_41o3u")
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 50
+text = "1"
+
+[connection signal="pressed" from="UI/Multiplayer/Back" to="." method="_on_back_pressed"]

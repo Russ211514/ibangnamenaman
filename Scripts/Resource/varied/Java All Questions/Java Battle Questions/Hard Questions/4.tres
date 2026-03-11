@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dnt6nkip60hn8"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_4d6s8"]
+
+[resource]
+script = ExtResource("1_4d6s8")
+Question_Info = "Which statement is FALSE about arrays?"
+options = Array[String](["Arrays have fixed size", "Array index starts at 0", "Arrays can hold mixed data types", ".length gives the number of elements"])
+correct = "Arrays can hold mixed data types"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dd68rofmkordu"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_fxic2"]
+
+[resource]
+script = ExtResource("1_fxic2")
+Question_Info = "If you want to apply two different styles (like color and font-size) within one style attribute, how do you separate them?"
+options = Array[String](["Use a space between them.", "Use a colon (:) between them.", "Use a semicolon (;) between them.", "Use a forward slash (/) between them."])
+correct = "Use a semicolon (;) between them."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

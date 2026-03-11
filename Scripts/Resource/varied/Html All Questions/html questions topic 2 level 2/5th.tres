@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://c33h3b7ohsca1"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_7uagl"]
+
+[resource]
+script = ExtResource("1_7uagl")
+Question_Info = "Think of your sentences as a group of sheep. Which tag acts like a \"fence\" to keep them in a neat group so they don't run into other sections?"
+options = Array[String](["<h6>", "<img>", "<p>", "<button>"])
+correct = "<p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

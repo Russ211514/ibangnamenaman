@@ -1,0 +1,229 @@
+[gd_scene format=3 uid="uid://cyjqcqrgk7kxl"]
+
+[ext_resource type="Script" uid="uid://dgkwol6ombicp" path="res://Scripts/html_tutorial_start.gd" id="1_fkr6r"]
+[ext_resource type="Texture2D" uid="uid://cchw0nrt5a14n" path="res://Art Assets/backgrounds/bground.png" id="1_wei65"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="2_fkr6r"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="3_m0w1t"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jk3e3"]
+texture = ExtResource("1_wei65")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6rtt2"]
+texture = ExtResource("3_m0w1t")
+expand_margin_left = 15.0
+expand_margin_right = 15.0
+region_rect = Rect2(67.68807, 53.68726, 184.39017, 72.433304)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_m0w1t"]
+texture = ExtResource("3_m0w1t")
+expand_margin_left = 20.0
+expand_margin_top = 10.0
+expand_margin_right = 20.0
+expand_margin_bottom = 10.0
+region_rect = Rect2(67.79819, 53.921593, 184.30623, 72.180504)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l4boh"]
+texture = ExtResource("3_m0w1t")
+texture_margin_left = 20.0
+texture_margin_top = 10.0
+texture_margin_right = 20.0
+texture_margin_bottom = 15.0
+region_rect = Rect2(67.177315, 53.123344, 185.42703, 73.555244)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fkr6r"]
+texture = ExtResource("3_m0w1t")
+expand_margin_top = 10.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[node name="Control" type="Control" unique_id=452646663]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fkr6r")
+
+[node name="bg" type="Panel" parent="." unique_id=2097813887]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_jk3e3")
+
+[node name="Label" type="Label" parent="." unique_id=1826765517]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -666.5
+offset_top = -447.0
+offset_right = 666.5
+offset_bottom = -293.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("2_fkr6r")
+theme_override_font_sizes/font_size = 175
+text = "WHAT IS HTML?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Question" type="Label" parent="." unique_id=515907746]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -323.0
+offset_top = -216.7218
+offset_right = 323.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fkr6r")
+theme_override_font_sizes/font_size = 40
+text = "HTML stands for HyperText Markup Language. It is not a programming language that performs logic; rather, it is a \"markup\" language used to describe the structure of a web page. It uses a series of elements, called Tags, to tell the web browser how to display content like text, links, and images."
+autowrap_mode = 2
+
+[node name="Understand" type="Button" parent="." unique_id=2131705683]
+layout_mode = 0
+offset_left = 452.0
+offset_top = 867.0
+offset_right = 897.0
+offset_bottom = 958.05145
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fkr6r")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_6rtt2")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_6rtt2")
+theme_override_styles/hover = SubResource("StyleBoxTexture_6rtt2")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_6rtt2")
+text = "I dont understand"
+autowrap_mode = 2
+
+[node name="Next" type="Button" parent="." unique_id=335627401]
+layout_mode = 0
+offset_left = 1027.0
+offset_top = 879.582
+offset_right = 1387.0
+offset_bottom = 948.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fkr6r")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_m0w1t")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_m0w1t")
+theme_override_styles/hover = SubResource("StyleBoxTexture_m0w1t")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_m0w1t")
+text = "NEXT"
+
+[node name="Explanation" type="Panel" parent="." unique_id=787437536]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -312.65027
+offset_top = -239.0
+offset_right = 292.65015
+offset_bottom = 317.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Explanation" unique_id=1368810129]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -113.0
+offset_top = 6.0
+offset_right = 113.0
+offset_bottom = 37.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fkr6r")
+theme_override_font_sizes/font_size = 35
+text = "EXPLANATION"
+
+[node name="X button" type="Button" parent="Explanation" unique_id=1307370625]
+layout_mode = 0
+offset_left = 567.65027
+offset_top = -22.0
+offset_right = 631.65027
+offset_bottom = 42.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fkr6r")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_l4boh")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_l4boh")
+theme_override_styles/hover = SubResource("StyleBoxTexture_l4boh")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_l4boh")
+text = "X"
+
+[node name="simple explanation" type="Label" parent="Explanation" unique_id=578517828]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -290.00006
+offset_top = -221.0
+offset_right = 290.00006
+offset_bottom = 265.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fkr6r")
+theme_override_font_sizes/font_size = 35
+text = "Imagine you are building a house out of LEGOs. HTML is like the Instruction Manual. On its own, the manual isn't the house, but it tells you exactly where every brick should go. Without the manual, you just have a pile of bricks! When you write HTML, you are giving the computer a set of instructions on how to build your page."
+autowrap_mode = 2
+
+[node name="buttons" type="VBoxContainer" parent="." unique_id=1129067358]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 121.0
+offset_top = -173.0
+offset_right = 306.5263
+offset_bottom = -120.0
+grow_vertical = 0
+theme_override_constants/separation = 30
+
+[node name="Back" type="Button" parent="buttons" unique_id=410567544]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_fkr6r")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_fkr6r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_fkr6r")
+theme_override_styles/hover = SubResource("StyleBoxTexture_fkr6r")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_fkr6r")
+text = "BACK"
+
+[connection signal="pressed" from="Understand" to="." method="_on_understand_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="Explanation/X button" to="." method="_on_x_button_pressed"]
+[connection signal="pressed" from="buttons/Back" to="." method="_on_back_pressed"]

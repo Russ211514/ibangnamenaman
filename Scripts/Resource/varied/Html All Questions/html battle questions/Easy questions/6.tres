@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dl2mh3x7m5g7q"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_jba5s"]
+
+[resource]
+script = ExtResource("1_jba5s")
+Question_Info = "If you want to write a standard sentence or a group of sentences, which tag should you use?"
+options = Array[String](["`<html>`", "`<title>`", "`<p>`", "`<h1>`"])
+correct = "`<p>`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

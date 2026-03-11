@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://ds3cnitfyhvj8"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_2feud"]
+
+[resource]
+script = ExtResource("1_2feud")
+Question_Info = "Which is an example of encapsulation?"
+options = Array[String](["public int age;", "private int age; public void setAge(int a){age=a;}", "class A extends B", "int[] arr = {1,2}"])
+correct = "private int age; public void setAge(int a){age=a;}"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

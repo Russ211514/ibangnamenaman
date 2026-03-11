@@ -1,0 +1,297 @@
+[gd_scene format=3 uid="uid://oxh800noswjt"]
+
+[ext_resource type="Script" uid="uid://bflwgtda8i7yw" path="res://Scripts/game_battle.gd" id="1_7x71r"]
+[ext_resource type="Script" uid="uid://b4h7jgw5xhajg" path="res://Scripts/background_sprite.gd" id="2_8d2i4"]
+[ext_resource type="Theme" uid="uid://2q3vbk6bmh2r" path="res://Themes/default_theme.tres" id="3_8d2i4"]
+[ext_resource type="PackedScene" uid="uid://cvj375674d1g6" path="res://Scenes/window_default.tscn" id="4_8d2i4"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="5_8d2i4"]
+[ext_resource type="PackedScene" uid="uid://cjbitdt03r8sc" path="res://Scenes/health_bar.tscn" id="6_8d2i4"]
+[ext_resource type="PackedScene" uid="uid://dcq8wnaiijaee" path="res://player/player.tscn" id="7_07knb"]
+[ext_resource type="Script" uid="uid://hwl1a3d4oayi" path="res://Scripts/options.gd" id="7_8d2i4"]
+[ext_resource type="PackedScene" uid="uid://pfbbw7m8lvju" path="res://Opponent/Enemy.tscn" id="8_7x71r"]
+[ext_resource type="PackedScene" uid="uid://d4kh5lhm8k6ck" path="res://Html Scenes/Singleplayer/html_question_battle.tscn" id="9_jf7jn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ibsfp"]
+font = ExtResource("5_8d2i4")
+font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_33pj6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2pq53"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x03gj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_07knb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7x71r"]
+
+[sub_resource type="Theme" id="Theme_7w5d3"]
+Button/font_sizes/font_size = 40
+Button/styles/disabled = SubResource("StyleBoxEmpty_33pj6")
+Button/styles/focus = SubResource("StyleBoxEmpty_2pq53")
+Button/styles/hover = SubResource("StyleBoxEmpty_x03gj")
+Button/styles/normal = SubResource("StyleBoxEmpty_07knb")
+Button/styles/pressed = SubResource("StyleBoxEmpty_7x71r")
+
+[node name="Game Battle" type="Control" unique_id=125036972]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7x71r")
+
+[node name="BattleLayout" type="CanvasLayer" parent="." unique_id=2115011377]
+
+[node name="Background_Sprite" type="Sprite2D" parent="BattleLayout" unique_id=1437225844]
+position = Vector2(961.6667, 539.5)
+scale = Vector2(6, 6)
+script = ExtResource("2_8d2i4")
+
+[node name="Battle" type="Control" parent="BattleLayout" unique_id=1654924168]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_8d2i4")
+
+[node name="Bottom" type="HBoxContainer" parent="BattleLayout/Battle" unique_id=835463703]
+custom_minimum_size = Vector2(870, 240)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -511.0
+offset_top = -266.0
+offset_right = 511.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Enemy" parent="BattleLayout/Battle/Bottom" unique_id=1717120480 instance=ExtResource("4_8d2i4")]
+layout_mode = 2
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleLayout/Battle/Bottom/Enemy" unique_id=125817164]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 784.0
+offset_top = -740.0
+offset_right = 948.0
+offset_bottom = -740.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer" unique_id=1380034177]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer/VBoxContainer" unique_id=587332067]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("5_8d2i4")
+theme_override_font_sizes/font_size = 40
+text = "ENEMY"
+horizontal_alignment = 2
+
+[node name="HealthBar" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer/VBoxContainer" unique_id=1586567242 instance=ExtResource("6_8d2i4")]
+layout_mode = 2
+show_percentage = true
+
+[node name="Player" parent="BattleLayout/Battle/Bottom" unique_id=1491260129 instance=ExtResource("4_8d2i4")]
+layout_mode = 2
+size_flags_stretch_ratio = 1.5
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleLayout/Battle/Bottom/Player" unique_id=1117719186]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -744.0
+offset_top = -737.0
+offset_right = -744.0
+offset_bottom = -737.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleLayout/Battle/Bottom/Player/MarginContainer" unique_id=2007735875]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1780656213]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("5_8d2i4")
+theme_override_font_sizes/font_size = 40
+text = "PLAYER"
+
+[node name="HealthBar" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=536365432 instance=ExtResource("6_8d2i4")]
+layout_mode = 2
+value = 150.0
+show_percentage = true
+
+[node name="MagicCooldownLabel" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1769793624]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+label_settings = SubResource("LabelSettings_ibsfp")
+
+[node name="UltimateCooldownLabel" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1385828427]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="DefendCooldownLabel" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1476975334]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+
+[node name="PlayerTurnTimerLabel" type="Label" parent="BattleLayout/Battle/Bottom/Player/MarginContainer/VBoxContainer" unique_id=1627890451]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Time: 35s"
+label_settings = SubResource("LabelSettings_ibsfp")
+
+[node name="Options" parent="BattleLayout/Battle" unique_id=1737756703 instance=ExtResource("4_8d2i4")]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 0
+offset_left = 586.0
+offset_top = 813.0
+offset_right = 826.0
+offset_bottom = 1053.0
+size_flags_stretch_ratio = 1.5
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Options" type="VBoxContainer" parent="BattleLayout/Battle/Options" unique_id=1611475217]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+script = ExtResource("7_8d2i4")
+
+[node name="Fight" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=1956270848]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Magic")
+theme = SubResource("Theme_7w5d3")
+text = "FIGHT"
+
+[node name="Magic" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=874810436]
+layout_mode = 2
+text = "MAGIC"
+
+[node name="Defend" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=650451185]
+layout_mode = 2
+text = "DEFEND"
+
+[node name="Ultimate" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=1209353473]
+layout_mode = 2
+text = "ULTIMATE"
+
+[node name="Player" parent="BattleLayout" unique_id=1243501499 instance=ExtResource("7_07knb")]
+position = Vector2(285, 660)
+
+[node name="Enemy" parent="BattleLayout" unique_id=67505786 instance=ExtResource("8_7x71r")]
+position = Vector2(1730, 660)
+
+[node name="Control" parent="BattleLayout" unique_id=818718884 instance=ExtResource("9_jf7jn")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -35.0
+offset_bottom = -35.0
+
+[node name="Lose" type="Label" parent="BattleLayout" unique_id=948726353]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -7.5
+offset_right = 20.0
+offset_bottom = 7.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_8d2i4")
+theme_override_font_sizes/font_size = 100
+text = "YOU LOSE!"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Win" type="Label" parent="BattleLayout" unique_id=132670428]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -7.5
+offset_right = 20.0
+offset_bottom = 7.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_8d2i4")
+theme_override_font_sizes/font_size = 100
+text = "YOU WIN!"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Info" type="Label" parent="BattleLayout" unique_id=1300748977]
+custom_minimum_size = Vector2(400, 80)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -225.5
+offset_top = 23.0
+offset_right = 269.5
+offset_bottom = 103.0
+grow_horizontal = 2
+theme = ExtResource("3_8d2i4")
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 65
+text = "PLAYER'S TURN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestionInfo" type="Label" parent="BattleLayout" unique_id=216929099]
+visible = false
+custom_minimum_size = Vector2(645, 150)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -322.5
+offset_top = -238.0
+offset_right = 322.5
+offset_bottom = -88.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_8d2i4")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 55
+text = "ENEMY GOT IT RIGHT"
+horizontal_alignment = 1
+vertical_alignment = 1

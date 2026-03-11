@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bp8dchgtqmj3e"]
+
+[ext_resource type="Texture2D" uid="uid://dmedtn1ubigkg" path="res://Art Assets/java technician/javatechnician gold.png" id="1_0xv3t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2f3qk"]
+
+[node name="Java Enemy" type="CharacterBody2D" unique_id=1777358082]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=900266703]
+position = Vector2(-34, 24)
+scale = Vector2(6, 6)
+shape = SubResource("CircleShape2D_2f3qk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=760547560]
+position = Vector2(-63, 0)
+scale = Vector2(6, 6)
+texture = ExtResource("1_0xv3t")
+flip_h = true

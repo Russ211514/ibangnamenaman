@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://c7dvc3pmcsw8c"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_0nfo3"]
+
+[resource]
+script = ExtResource("1_0nfo3")
+Question_Info = "What is the output of bool(0) in Python?"
+options = Array[String](["True", "False", "0", "None"])
+correct = "False"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://b40jvl7is44c"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_ghff1"]
+
+[resource]
+script = ExtResource("1_ghff1")
+Question_Info = "When linking to an external site like `https://www.wikipedia.org`, why is it considered a \"Hard Error\" to forget the `https://` part?"
+options = Array[String](["The browser will assume you are looking for a folder on your own computer.", "The website will load but images will be missing.", "The text will appear blue but won't be clickable.", "It is actually optional and doesn't matter."])
+correct = "The browser will assume you are looking for a folder on your own computer."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dy43cucu2wibq"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_o33vs"]
+
+[resource]
+script = ExtResource("1_o33vs")
+Question_Info = "You want to write a long story about your pixel character's adventures. Which tag do you use to wrap your sentences into a neat, organized block?"
+options = Array[String](["<h1>", "<story>", "<p>", "<body>"])
+correct = "<p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

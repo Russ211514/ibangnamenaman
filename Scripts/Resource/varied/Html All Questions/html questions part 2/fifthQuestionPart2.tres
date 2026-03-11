@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bl48ckcmivc74"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_nnpmt"]
+
+[resource]
+script = ExtResource("1_nnpmt")
+Question_Info = "Where does the \"secret\" information (meta-data) about the page live?"
+options = Array[String](["In the <body>", "In the <html>", "In the <head>", "In the <p>"])
+correct = "In the <head>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

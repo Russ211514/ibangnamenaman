@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://c3jgw58e63bdu"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_3rxnf"]
+
+[resource]
+script = ExtResource("1_3rxnf")
+Question_Info = "Why does a `<p>` tag always start on a new line, while a `<b>` tag stays on the same line as the rest of the text?"
+options = Array[String](["Paragraphs are \"Block-level\" elements; Bold tags are \"Inline\" elements.", "Bold tags are \"Block-level\"; Paragraphs are \"Inline\".", "It depends on the browser you are using.", "The `<p>` tag is a \"Root\" element."])
+correct = "Paragraphs are \"Block-level\" elements; Bold tags are \"Inline\" elements."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

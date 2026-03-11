@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://gjt4oxyswmhk"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_ubv87"]
+
+[resource]
+script = ExtResource("1_ubv87")
+Question_Info = "What is Python mainly known for?"
+options = Array[String](["Complex syntax.", "Difficult learning curve.", "Simple and readable syntax.", "Only being used for games."])
+correct = "Simple and readable syntax."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

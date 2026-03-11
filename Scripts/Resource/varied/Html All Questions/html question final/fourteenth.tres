@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://7jqkb0jb0fmn"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_4hgo1"]
+
+[resource]
+script = ExtResource("1_4hgo1")
+Question_Info = "HTML Purpose Question: Why is HTML called a \"Markup Language\" rather than a \"Programming Language\"?"
+options = Array[String](["Because it can only be used by artists.", "Because it describes structure and content rather than performing logic/calculations.", "Because it is used to mark the price of products on a website.", "Because it only works when the internet is turned off."])
+correct = "Because it describes structure and content rather than performing logic/calculations."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

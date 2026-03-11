@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dw68yrglbmspf"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_mn31b"]
+
+[resource]
+script = ExtResource("1_mn31b")
+Question_Info = "If you want to write a simple description or a character bio on your page, which tag is the standard way to create a \"Paragraph\"?"
+options = Array[String](["<para>", "<text>", "<p>", "<section>"])
+correct = "<p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

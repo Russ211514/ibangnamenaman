@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://bj40pwqu75kp5"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_cm42b"]
+
+[resource]
+script = ExtResource("1_cm42b")
+Question_Info = "What is the name of the attribute used to provide a text description if an image fails to load?"
+options = Array[String](["`src`", "`alt`", "`title`", "`width`"])
+correct = "`alt`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

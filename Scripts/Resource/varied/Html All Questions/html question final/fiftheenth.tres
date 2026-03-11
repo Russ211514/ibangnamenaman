@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://crveumqvxkj0j"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_ws7pp"]
+
+[resource]
+script = ExtResource("1_ws7pp")
+Question_Info = "Using the sandwich analogy, if <html> is the plate and <body> is the meat/cheese, what is the <head>?"
+options = Array[String](["The napkins.", "The toothpick flag with the recipe name.", "The person eating the sandwich.", "The table the plate sits on."])
+correct = "The toothpick flag with the recipe name."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d4c6c3gi4odjc"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_r3lrg"]
+
+[resource]
+script = ExtResource("1_r3lrg")
+Question_Info = "Which of these is a correct example of an \"End Tag\"?"
+options = Array[String](["<p>", "<close p>", "</p>", "<p/>"])
+correct = "</p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

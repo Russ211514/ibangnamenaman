@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://b4pln1o8m5vk5"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_fhmko"]
+[ext_resource type="Texture2D" uid="uid://db81587mdi0gk" path="res://Art Assets/Java Question Images/Screenshot 2026-02-16 234847.png" id="1_mhmhe"]
+
+[resource]
+script = ExtResource("1_fhmko")
+Question_Info = "How many times will this loop print Hello?"
+type = 1
+question_image = ExtResource("1_mhmhe")
+options = Array[String](["3", "6", "9", "12"])
+correct = "6"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

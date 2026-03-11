@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://bw722qp28tir5"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_yukax"]
+
+[resource]
+script = ExtResource("1_yukax")
+Question_Info = "You want a sentence where the first half is bold and the second half is italicized. Which code follows the correct nesting rules?"
+options = Array[String](["<b>Bold text <i>Italic text</b></i>", "<b>Bold text</b> <i>Italic text</i>", "<b>Bold text <i>Italic text</i>", "<b>Bold text</b> <italic>Italic text</italic>"])
+correct = "<b>Bold text</b> <i>Italic text</i>"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

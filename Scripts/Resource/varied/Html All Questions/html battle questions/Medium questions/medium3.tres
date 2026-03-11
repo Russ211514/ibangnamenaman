@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://b4w4xyp2di8fv"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_rx877"]
+
+[resource]
+script = ExtResource("1_rx877")
+Question_Info = "When using the `<img>` tag, which two attributes are considered essential for it to function correctly and accessibly?"
+options = Array[String](["`src` and `width`", "`src` and `alt`", "`alt` and `height`", "`href` and `src`"])
+correct = "`src` and `alt`"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

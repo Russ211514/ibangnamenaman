@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://lro2u5vicjhq"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_xa5yh"]
+
+[resource]
+script = ExtResource("1_xa5yh")
+Question_Info = "Which of these would **not** be found inside the `<head>` section of a properly structured HTML document?"
+options = Array[String](["`<title>`", "`<meta>`", "`<h1>`", "`<style>`"])
+correct = "`<h1>`"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

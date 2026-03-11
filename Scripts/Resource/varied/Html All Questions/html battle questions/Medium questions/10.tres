@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://chtbn20qhbpfp"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_bt6e7"]
+
+[resource]
+script = ExtResource("1_bt6e7")
+Question_Info = "You want a picture to sit on the right side of the screen while text wraps around its left side. Which property should you use?"
+options = Array[String](["`text-align: right;`", "`float: right;`", "`position: right;`", "`wrap: right;`"])
+correct = "`float: right;`"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

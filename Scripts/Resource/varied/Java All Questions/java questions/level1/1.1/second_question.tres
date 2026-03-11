@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://c6dhrc8d7x58y"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_i14wq"]
+
+[resource]
+script = ExtResource("1_i14wq")
+Question_Info = "Which keyword allows the `main` method to run without creating an object?"
+options = Array[String](["void", "public", "static", "args"])
+correct = "static"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

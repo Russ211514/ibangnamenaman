@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://fpc7gblhe6he"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_ulacm"]
+
+[resource]
+script = ExtResource("1_ulacm")
+Question_Info = "When using headings to organize your game's menu, what is the general rule for the numbers in the tags?"
+options = Array[String](["Smaller numbers make bigger text.", "Bigger numbers make bigger text.", "All numbers result in the same text size.", "Numbers tell the computer what color the text should be."])
+correct = "Smaller numbers make bigger text."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

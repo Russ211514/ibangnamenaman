@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cj7k0sqelpp1b"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_dcy4q"]
+
+[resource]
+script = ExtResource("1_dcy4q")
+Question_Info = "You have a main title (<h1>) and a sub-title. You want the sub-title to be smaller than the main title but bigger than regular text. Which tag is the best choice?"
+options = Array[String](["<h2>", "<h6>", "<p>", "<html>"])
+correct = "<h2>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

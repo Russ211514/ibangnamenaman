@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://coftiu8njwysl"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_mlow6"]
+
+[resource]
+script = ExtResource("1_mlow6")
+Question_Info = "Which tag is like a \"sticker\" that works all by itself?"
+options = Array[String](["<p>", "<html>", "<br>", "<body>"])
+correct = "<br>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

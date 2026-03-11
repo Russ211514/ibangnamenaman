@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://rkyfvit1xmu0"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_p6jn1"]
+
+[resource]
+script = ExtResource("1_p6jn1")
+Question_Info = "You want to add a very small, unimportant note at the bottom of your page. Which heading level is the best for a \"tiny whisper\"?"
+options = Array[String](["<h6>", "<h2>", "<h1>", "<h4>"])
+correct = "<h6>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="QuizTheme" format=3 uid="uid://cmleiciucx5hm"]
+
+[ext_resource type="Script" uid="uid://g6r3uoyeu1rp" path="res://Scripts/resources/theme.gd" id="1_16cwg"]
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="2_5dwvb"]
+[ext_resource type="Resource" uid="uid://bmkuv2rwu0b34" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/1st.tres" id="3_6qebk"]
+[ext_resource type="Resource" uid="uid://b14p6j2r0i2do" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/2nd.tres" id="4_lt12g"]
+[ext_resource type="Resource" uid="uid://k7cn7nax1tv6" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/3rd.tres" id="5_ui2au"]
+[ext_resource type="Resource" uid="uid://c7dh3tnf7g2dj" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/4th.tres" id="6_pl24e"]
+[ext_resource type="Resource" uid="uid://cf135w3pmqih4" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/5th.tres" id="7_hp44f"]
+[ext_resource type="Resource" uid="uid://djtf6feflj7pj" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/6th.tres" id="8_epgtf"]
+[ext_resource type="Resource" uid="uid://khw0ujmov7a3" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/7th.tres" id="9_stopg"]
+[ext_resource type="Resource" uid="uid://ch63obfowfdue" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/8th.tres" id="10_st50b"]
+[ext_resource type="Resource" uid="uid://dlyutwbjak8l7" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/9th.tres" id="11_dxcey"]
+[ext_resource type="Resource" uid="uid://d3qpoh0tthq1x" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/10th.tres" id="12_ttbpx"]
+[ext_resource type="Resource" uid="uid://bes2jnyhby28v" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/11th.tres" id="13_5nfu4"]
+[ext_resource type="Resource" uid="uid://dd68rofmkordu" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/12th.tres" id="14_cwhv4"]
+[ext_resource type="Resource" uid="uid://cilw30wc41h2v" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/13th.tres" id="15_yfujh"]
+[ext_resource type="Resource" uid="uid://d1mqh1jkjxt1i" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/14th.tres" id="16_k2fu5"]
+[ext_resource type="Resource" uid="uid://jxvt42l34r4o" path="res://Scripts/Resource/varied/Html All Questions/html final level 3/15th.tres" id="17_q6x1h"]
+
+[resource]
+script = ExtResource("1_16cwg")
+theme = Array[ExtResource("2_5dwvb")]([ExtResource("3_6qebk"), ExtResource("4_lt12g"), ExtResource("5_ui2au"), ExtResource("6_pl24e"), ExtResource("7_hp44f"), ExtResource("8_epgtf"), ExtResource("9_stopg"), ExtResource("10_st50b"), ExtResource("11_dxcey"), ExtResource("12_ttbpx"), ExtResource("13_5nfu4"), ExtResource("14_cwhv4"), ExtResource("15_yfujh"), ExtResource("16_k2fu5"), ExtResource("17_q6x1h")])
+metadata/_custom_type_script = "uid://g6r3uoyeu1rp"

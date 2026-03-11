@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://b46bn0t0hfylw"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_n515w"]
+
+[resource]
+script = ExtResource("1_n515w")
+Question_Info = "If a = 5 and b = 3, what does (a > b && b < 2) evaluate to?"
+options = Array[String](["true", "false", "1", "Error"])
+correct = "false"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://qnx0lal8uwls"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_pvbff"]
+
+[resource]
+script = ExtResource("1_pvbff")
+Question_Info = "What does the forward slash / signify in a tag?"
+options = Array[String](["The start of an instruction", "The end of an element", "A link to a website", "An image source"])
+correct = "The end of an element"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

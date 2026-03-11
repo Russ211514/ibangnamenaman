@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dvugsx0s5ux0p"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_s216w"]
+
+[resource]
+script = ExtResource("1_s216w")
+Question_Info = "Both `<i>` and `<em>` make text look italicized. Why should you use `<em>` for a specific word in a sentence instead of `<i>`?"
+options = Array[String](["Because `<em>` is newer and works on more browsers.", "Because `<em>` provides structural emphasis that screen readers can recognize.", "Because `<i>` is only for images, not for text.", "Because `<em>` automatically changes the text color to red."])
+correct = "Because `<em>` provides structural emphasis that screen readers can recognize."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

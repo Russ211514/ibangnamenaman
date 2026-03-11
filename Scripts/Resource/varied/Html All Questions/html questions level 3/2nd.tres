@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dhypoa4hq4ig3"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_m2m7e"]
+
+[resource]
+script = ExtResource("1_m2m7e")
+Question_Info = "When writing a style declaration, which character is used to separate the property (the feature you are changing) from its value (how it looks)?"
+options = Array[String](["An equals sign (=)", "A colon (:)", "A semicolon (;)", "A hyphen (-)"])
+correct = "A colon (:)"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

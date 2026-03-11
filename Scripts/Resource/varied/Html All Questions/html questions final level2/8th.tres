@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dp7d7lpnku77u"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_fa4dj"]
+
+[resource]
+script = ExtResource("1_fa4dj")
+Question_Info = "How does an <h1> tag compare to a regular <p> tag when viewed in a browser?"
+options = Array[String](["The <h1> is much smaller and thinner.", "The <h1> is always larger and bolder.", "They both look exactly the same.", "The <p> tag is always blue and the <h1> is red."])
+correct = "The <h1> is always larger and bolder."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

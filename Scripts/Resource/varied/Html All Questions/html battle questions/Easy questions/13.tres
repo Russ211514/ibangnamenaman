@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://b24vclwvreh0s"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_8a57u"]
+
+[resource]
+script = ExtResource("1_8a57u")
+Question_Info = "Which CSS property is used to change the color of the text itself?"
+options = Array[String](["`background-color`", "`text-style`", "`color`", "`font-color`"])
+correct = "`color`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

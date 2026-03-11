@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dypisfnejt52t"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_ddray"]
+
+[resource]
+script = ExtResource("1_ddray")
+Question_Info = "In the code `<h1 style=\"color: blue;\">Welcome</h1>`, which specific part is the Attribute?"
+options = Array[String](["`<h1>`", "`style`", "`color`", "`blue`"])
+correct = "`style`"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://c21aubmtjy7p8"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_w5nvm"]
+
+[resource]
+script = ExtResource("1_w5nvm")
+Question_Info = "Which structure is best when checking multiple discrete values of a variable?"
+options = Array[String](["if-else", "switch", "for", "while"])
+correct = "switch"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,206 @@
+[gd_scene format=3 uid="uid://1axocu4ty1yl"]
+
+[ext_resource type="Texture2D" uid="uid://cyh0kegeul5ab" path="res://Art Assets/backgrounds/background_level_selection.png" id="1_2ipe2"]
+[ext_resource type="Script" uid="uid://dufdn1jd5gpgu" path="res://Scripts/html_level_selector.gd" id="1_v7xjh"]
+[ext_resource type="Texture2D" uid="uid://gfhatt7lgafe" path="res://Art Assets/buttons/blank_button_level_selection.png" id="2_v7xjh"]
+[ext_resource type="Texture2D" uid="uid://ce8xn6c21jmwu" path="res://Art Assets/buttons/lock_button_level_selection.png" id="3_t2o12"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="5_y3y7t"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="6_rnpuo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y3y7t"]
+texture = ExtResource("1_2ipe2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wgvpx"]
+texture = ExtResource("6_rnpuo")
+expand_margin_top = 10.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[node name="Control" type="Control" unique_id=1948769908]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v7xjh")
+
+[node name="Panel" type="Panel" parent="." unique_id=690669300]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_y3y7t")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=109103347]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=143195440]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 15.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 200
+text = "LEVEL SELECTOR"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer" unique_id=909078434]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -802.0
+offset_top = -28.0
+offset_right = -402.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(4, 4)
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="level1" type="TextureButton" parent="CanvasLayer/HBoxContainer" unique_id=276450504]
+layout_mode = 2
+texture_normal = ExtResource("2_v7xjh")
+texture_pressed = ExtResource("2_v7xjh")
+texture_hover = ExtResource("2_v7xjh")
+texture_disabled = ExtResource("3_t2o12")
+texture_focused = ExtResource("2_v7xjh")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/level1" unique_id=636232448]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 40
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level2" type="TextureButton" parent="CanvasLayer/HBoxContainer" unique_id=980046217]
+layout_mode = 2
+disabled = true
+texture_normal = ExtResource("2_v7xjh")
+texture_pressed = ExtResource("2_v7xjh")
+texture_hover = ExtResource("2_v7xjh")
+texture_disabled = ExtResource("3_t2o12")
+texture_focused = ExtResource("2_v7xjh")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/level2" unique_id=1172093498]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 40
+text = "2"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level3" type="TextureButton" parent="CanvasLayer/HBoxContainer" unique_id=988524713]
+layout_mode = 2
+disabled = true
+texture_normal = ExtResource("2_v7xjh")
+texture_pressed = ExtResource("2_v7xjh")
+texture_hover = ExtResource("2_v7xjh")
+texture_disabled = ExtResource("3_t2o12")
+texture_focused = ExtResource("2_v7xjh")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/level3" unique_id=1082886198]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 40
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level4" type="TextureButton" parent="CanvasLayer/HBoxContainer" unique_id=1241132132]
+layout_mode = 2
+disabled = true
+texture_normal = ExtResource("2_v7xjh")
+texture_pressed = ExtResource("2_v7xjh")
+texture_hover = ExtResource("2_v7xjh")
+texture_disabled = ExtResource("3_t2o12")
+texture_focused = ExtResource("2_v7xjh")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/level4" unique_id=1660733565]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 40
+text = "4"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level5" type="TextureButton" parent="CanvasLayer/HBoxContainer" unique_id=1410355909]
+layout_mode = 2
+disabled = true
+texture_normal = ExtResource("2_v7xjh")
+texture_pressed = ExtResource("2_v7xjh")
+texture_hover = ExtResource("2_v7xjh")
+texture_disabled = ExtResource("3_t2o12")
+texture_focused = ExtResource("2_v7xjh")
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="CanvasLayer/HBoxContainer/level5" unique_id=1134369968]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8627451, 0.7490196, 0.5686275, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 40
+text = "5"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="Button" parent="CanvasLayer" unique_id=289786694]
+offset_left = 1698.0
+offset_top = 951.0
+offset_right = 1876.2452
+offset_bottom = 1018.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("5_y3y7t")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_wgvpx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_wgvpx")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wgvpx")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_wgvpx")
+text = "BACK"
+
+[connection signal="pressed" from="CanvasLayer/Back" to="." method="_on_back_pressed"]

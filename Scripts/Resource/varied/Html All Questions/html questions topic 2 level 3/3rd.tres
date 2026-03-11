@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://5jl18kv1qyng"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_7f0l6"]
+
+[resource]
+script = ExtResource("1_7f0l6")
+Question_Info = "When setting the font-size of an element, what is the standard unit of measurement used to define the height of the characters in pixels?"
+options = Array[String](["pt", "px", "cm", "in"])
+correct = "px"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

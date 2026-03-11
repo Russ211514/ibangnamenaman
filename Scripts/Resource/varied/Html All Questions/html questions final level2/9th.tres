@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://ls4p6dpf22me"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_0nfse"]
+
+[resource]
+script = ExtResource("1_0nfse")
+Question_Info = "Closing the Story Question: You are writing a paragraph about your favorite pixel pet. What is the correct way to \"close\" the paragraph tag?"
+options = Array[String](["<p>My pet is a cat.<p>", "<p>My pet is a cat.<p/>", "<p>My pet is a cat.</p>", "<p>My pet is a cat.<close>"])
+correct = "<p>My pet is a cat.</p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

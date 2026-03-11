@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://ce7504orffpuu"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_cil8p"]
+
+[resource]
+script = ExtResource("1_cil8p")
+Question_Info = "Which of these is a valid Java data type?"
+options = Array[String](["integer", "text", "int", "number"])
+correct = "int"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

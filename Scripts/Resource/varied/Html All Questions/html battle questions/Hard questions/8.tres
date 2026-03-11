@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://ba41prarxtwng"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_brp7i"]
+
+[resource]
+script = ExtResource("1_brp7i")
+Question_Info = "Why is `UTF-8` the most common value for character encoding when saving an HTML document?"
+options = Array[String](["It makes the file size the smallest possible.", "It covers almost all characters and symbols in the world.", "It is the only encoding that allows for images.", "It automatically translates your website into other languages."])
+correct = "It covers almost all characters and symbols in the world."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

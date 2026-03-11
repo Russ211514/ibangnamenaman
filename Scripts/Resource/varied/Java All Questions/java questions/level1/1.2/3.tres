@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://b2kcmb0esxjgk"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_5q1y6"]
+
+[resource]
+script = ExtResource("1_5q1y6")
+Question_Info = "In `System.out.println`, what does `System` refer to?"
+options = Array[String](["A variable.", "A built-in class.", "A file path.", "A comment."])
+correct = "A built-in class."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

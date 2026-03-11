@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://csqosw6e0h3bh"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_nujgq"]
+
+[resource]
+script = ExtResource("1_nujgq")
+Question_Info = "What is the value of !(true || false)?"
+options = Array[String](["true", "false", "Error", "0"])
+correct = "false"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

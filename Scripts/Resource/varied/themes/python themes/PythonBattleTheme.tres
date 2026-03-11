@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="BattleTheme" format=3 uid="uid://bnksx065m2x3k"]
+
+[ext_resource type="Script" uid="uid://cx1s8mbubkw7m" path="res://Scripts/resources/battle_theme.gd" id="1_kerou"]
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="2_55eph"]
+[ext_resource type="Resource" uid="uid://stj2tm3bp3h6" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Easy/easy4.tres" id="3_gxw8h"]
+[ext_resource type="Resource" uid="uid://bgqyvto3b27pp" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Easy/easy3.tres" id="4_llm2k"]
+[ext_resource type="Resource" uid="uid://c7dvc3pmcsw8c" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Easy/easy2.tres" id="5_yygl6"]
+[ext_resource type="Resource" uid="uid://cf233th4nuu3i" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Medium/medium3.tres" id="6_mh8ac"]
+[ext_resource type="Resource" uid="uid://ddvhko4eard8c" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Medium/medium1.tres" id="7_1ubt0"]
+[ext_resource type="Resource" uid="uid://bdms27udep72e" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Medium/medium2.tres" id="8_d3888"]
+[ext_resource type="Resource" uid="uid://bwbdvwj5sk7up" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Easy/easy1.tres" id="9_qwan6"]
+[ext_resource type="Resource" uid="uid://fe1muybkiwtm" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Hard/hard1.tres" id="10_vs5tj"]
+[ext_resource type="Resource" uid="uid://rp3xlpfbhfx6" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Hard/hard2.tres" id="11_0c5tj"]
+[ext_resource type="Resource" uid="uid://bffq8hvcw0g8w" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Hard/hard3.tres" id="12_aqwoq"]
+[ext_resource type="Resource" uid="uid://b8w0ige2hmmme" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Hard/hard4.tres" id="13_f2e3t"]
+[ext_resource type="Resource" uid="uid://cug0gcr3pkwi4" path="res://Scripts/Resource/varied/Python All Questions/python battle questions/Medium/medium4.tres" id="14_r6il6"]
+
+[resource]
+script = ExtResource("1_kerou")
+theme = Array[ExtResource("2_55eph")]([ExtResource("3_gxw8h"), ExtResource("4_llm2k"), ExtResource("5_yygl6"), ExtResource("6_mh8ac"), ExtResource("7_1ubt0"), ExtResource("8_d3888"), ExtResource("9_qwan6"), ExtResource("10_vs5tj"), ExtResource("11_0c5tj"), ExtResource("12_aqwoq"), ExtResource("13_f2e3t"), ExtResource("14_r6il6")])
+metadata/_custom_type_script = "uid://cx1s8mbubkw7m"

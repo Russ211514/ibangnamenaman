@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://deggrm2wu3g1n"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_nvw2q"]
+
+[resource]
+script = ExtResource("1_nvw2q")
+Question_Info = "In a closing tag, where is the forward slash (/) character located?"
+options = Array[String](["After the tag name (e.g., <p/>)", "Before the tag name (e.g., </p>)", "Outside the brackets (e.g., / <p>)", "It is not required in a closing tag."])
+correct = "Before the tag name (e.g., </p>)"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

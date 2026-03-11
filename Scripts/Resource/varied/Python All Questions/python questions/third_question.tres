@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://fhigycq62b2w"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_7v5ns"]
+
+[resource]
+script = ExtResource("1_7v5ns")
+Question_Info = "How are code blocks defined in Python?"
+options = Array[String](["Using curly braces {}", "Using parentheses ()", "Using indentation (spaces)", "Using semicolons ;"])
+correct = "Using indentation (spaces)"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,30 @@
+{
+  "name": "godot-relay-server",
+  "version": "1.0.0",
+  "description": "WebSocket relay server for Godot multiplayer games on itch.io",
+  "main": "relay-server.js",
+  "scripts": {
+    "start": "node relay-server.js",
+    "dev": "nodemon relay-server.js"
+  },
+  "keywords": [
+    "godot",
+    "multiplayer",
+    "websocket",
+    "relay",
+    "itch.io"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.14.2",
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

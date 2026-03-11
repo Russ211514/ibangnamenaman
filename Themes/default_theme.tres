@@ -1,0 +1,29 @@
+[gd_resource type="Theme" format=3 uid="uid://2q3vbk6bmh2r"]
+
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="1_m7ogn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wkudg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ew257"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7nq1i"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dm4ci"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_g8g42"]
+
+[resource]
+Button/colors/font_color = Color(0.7265625, 0.6754761, 0.6754761, 1)
+Button/colors/font_hover_pressed_color = Color(0.7254902, 0.6745098, 0.6745098, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_m7ogn")
+Button/styles/disabled = SubResource("StyleBoxEmpty_wkudg")
+Button/styles/focus = SubResource("StyleBoxEmpty_ew257")
+Button/styles/hover = SubResource("StyleBoxEmpty_7nq1i")
+Button/styles/normal = SubResource("StyleBoxEmpty_dm4ci")
+Button/styles/pressed = SubResource("StyleBoxEmpty_g8g42")
+MarginContainer/constants/margin_bottom = 2
+MarginContainer/constants/margin_left = 2
+MarginContainer/constants/margin_right = 2
+MarginContainer/constants/margin_top = 2
+ProgressBar/fonts/font = ExtResource("1_m7ogn")

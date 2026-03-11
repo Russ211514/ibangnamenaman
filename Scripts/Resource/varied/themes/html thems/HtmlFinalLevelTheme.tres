@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="QuizTheme" format=3 uid="uid://0xyvrwshcyol"]
+
+[ext_resource type="Script" uid="uid://g6r3uoyeu1rp" path="res://Scripts/resources/theme.gd" id="1_qc7a4"]
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="2_i13kl"]
+[ext_resource type="Resource" uid="uid://o1iavyigx1aa" path="res://Scripts/Resource/varied/Html All Questions/html question final/eight.tres" id="3_0nab6"]
+[ext_resource type="Resource" uid="uid://dow3ln3pb3xkx" path="res://Scripts/Resource/varied/Html All Questions/html question final/eleventh.tres" id="4_idjg2"]
+[ext_resource type="Resource" uid="uid://xm75lo3p5iej" path="res://Scripts/Resource/varied/Html All Questions/html question final/fifth.tres" id="5_351fr"]
+[ext_resource type="Resource" uid="uid://crveumqvxkj0j" path="res://Scripts/Resource/varied/Html All Questions/html question final/fiftheenth.tres" id="6_am6kq"]
+[ext_resource type="Resource" uid="uid://d61ghsgke8a4" path="res://Scripts/Resource/varied/Html All Questions/html question final/first.tres" id="7_aurcf"]
+[ext_resource type="Resource" uid="uid://7jqkb0jb0fmn" path="res://Scripts/Resource/varied/Html All Questions/html question final/fourteenth.tres" id="8_exhgj"]
+[ext_resource type="Resource" uid="uid://8wxt3il02ogq" path="res://Scripts/Resource/varied/Html All Questions/html question final/fourth.tres" id="9_e1ejl"]
+[ext_resource type="Resource" uid="uid://cngb10sn5no7l" path="res://Scripts/Resource/varied/Html All Questions/html question final/nineth.tres" id="10_0d82h"]
+[ext_resource type="Resource" uid="uid://duxf0eeyx1hx8" path="res://Scripts/Resource/varied/Html All Questions/html question final/second.tres" id="11_tf44v"]
+[ext_resource type="Resource" uid="uid://cyhrk2vluvtoy" path="res://Scripts/Resource/varied/Html All Questions/html question final/seventh.tres" id="12_etv4i"]
+[ext_resource type="Resource" uid="uid://bbhjvf6kb804v" path="res://Scripts/Resource/varied/Html All Questions/html question final/sixth.tres" id="13_jlrfl"]
+[ext_resource type="Resource" uid="uid://bwdy5hb87wc0a" path="res://Scripts/Resource/varied/Html All Questions/html question final/tenth.tres" id="14_2ug0v"]
+[ext_resource type="Resource" uid="uid://botniwp76xer1" path="res://Scripts/Resource/varied/Html All Questions/html question final/thirdf.tres" id="15_tu1vd"]
+[ext_resource type="Resource" uid="uid://deggrm2wu3g1n" path="res://Scripts/Resource/varied/Html All Questions/html question final/thirteenth.tres" id="16_yk2tp"]
+[ext_resource type="Resource" uid="uid://chy4llir17hph" path="res://Scripts/Resource/varied/Html All Questions/html question final/twelveth.tres" id="17_jkff6"]
+
+[resource]
+script = ExtResource("1_qc7a4")
+theme = Array[ExtResource("2_i13kl")]([ExtResource("3_0nab6"), ExtResource("4_idjg2"), ExtResource("5_351fr"), ExtResource("6_am6kq"), ExtResource("7_aurcf"), ExtResource("8_exhgj"), ExtResource("9_e1ejl"), ExtResource("10_0d82h"), ExtResource("11_tf44v"), ExtResource("12_etv4i"), ExtResource("13_jlrfl"), ExtResource("14_2ug0v"), ExtResource("15_tu1vd"), ExtResource("16_yk2tp"), ExtResource("17_jkff6")])
+metadata/_custom_type_script = "uid://g6r3uoyeu1rp"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d4kaa0thivhso"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_1n3wn"]
+
+[resource]
+script = ExtResource("1_1n3wn")
+Question_Info = "According to the standard syntax rules, what symbol must be placed at the very end of a style value to signify the end of that specific instruction?"
+options = Array[String](["A semicolon (;)", "A period (.)", "A comma (,)", "A closing bracket (])"])
+correct = "A semicolon (;)"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

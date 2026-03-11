@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bes2jnyhby28v"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_1r43v"]
+
+[resource]
+script = ExtResource("1_1r43v")
+Question_Info = "If you apply style=\"color: blue;\" to the <body> tag, what is the result?"
+options = Array[String](["All text within the body will inherit the color blue.", "Only the page background becomes blue.", "All images on the page turn blue.", "The browser will ignore the style because it is on the body tag."])
+correct = "All text within the body will inherit the color blue."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

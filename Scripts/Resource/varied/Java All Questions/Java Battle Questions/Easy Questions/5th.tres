@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dvq4m5iei0bae"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_64ubj"]
+
+[resource]
+script = ExtResource("1_64ubj")
+Question_Info = "What values can a boolean hold in Java?"
+options = Array[String](["\"true\" or \"false\"", "1 or 0", "True or False", "true or false"])
+correct = "true or false"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

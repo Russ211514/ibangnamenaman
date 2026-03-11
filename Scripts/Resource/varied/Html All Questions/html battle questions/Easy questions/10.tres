@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://cjofdq1w0o1sh"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_ij6bo"]
+
+[resource]
+script = ExtResource("1_ij6bo")
+Question_Info = "Which tag is used to display text in *italics* for thoughts or technical terms?"
+options = Array[String](["`<b>`", "`<i>`", "`<u>`", "`<strong>`"])
+correct = "`<i>`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

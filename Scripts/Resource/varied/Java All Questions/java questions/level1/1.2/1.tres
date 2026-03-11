@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cjh0vdv3qqne"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_00uy7"]
+
+[resource]
+script = ExtResource("1_00uy7")
+Question_Info = "Which method should be used to keep multiple outputs on a single line?"
+options = Array[String](["System.out.println()", "System.out.print()", "System.out.line()", "System.out.stay()"])
+correct = "System.out.print()"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

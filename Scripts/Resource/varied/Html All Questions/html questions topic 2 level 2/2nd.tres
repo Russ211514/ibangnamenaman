@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bry78veyfg1cq"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_v0dgb"]
+
+[resource]
+script = ExtResource("1_v0dgb")
+Question_Info = "Why do paragraphs look clean on a webpage instead of looking squashed and crowded?"
+options = Array[String](["Browsers automatically add white space (margins) around the <p> tag.", "The computer changes the font color to make it easier to see.", "The <p> tag deletes any words that are too long.", "You have to manually draw lines between every sentence."])
+correct = "Browsers automatically add white space (margins) around the <p> tag."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

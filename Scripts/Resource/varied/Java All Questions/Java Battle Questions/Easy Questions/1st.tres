@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dyiv2xthfh4ul"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_gcunl"]
+
+[resource]
+script = ExtResource("1_gcunl")
+Question_Info = "Which is the correct way to display text in Java?"
+options = Array[String](["print(\"Hello\");", "System.out.println(\"Hello\");", "echo \"Hello\";", "printf(\"Hello\");"])
+correct = "System.out.println(\"Hello\");"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

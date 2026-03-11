@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d0jrv15rtjluh"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_w52t0"]
+
+[resource]
+script = ExtResource("1_w52t0")
+Question_Info = "What happens if you try to change the value of a variable marked as final?"
+options = Array[String](["The program runs faster.", "The value changes normally.", "A compilation error occurs.", "The variable is deleted."])
+correct = "A compilation error occurs."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

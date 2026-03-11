@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d0ahrlplh45jm"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_cvrqs"]
+
+[resource]
+script = ExtResource("1_cvrqs")
+Question_Info = "What happens to code written outside the class curly brackets?"
+options = Array[String](["It runs first.", "It is treated as a comment.", "It causes a compilation error.", "It becomes a global variable."])
+correct = "It causes a compilation error."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

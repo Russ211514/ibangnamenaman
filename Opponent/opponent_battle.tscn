@@ -1,0 +1,169 @@
+[gd_scene format=3 uid="uid://g6uwf6pk2hai"]
+
+[ext_resource type="Theme" uid="uid://2q3vbk6bmh2r" path="res://Themes/default_theme.tres" id="3_8d2i4"]
+[ext_resource type="PackedScene" uid="uid://cvj375674d1g6" path="res://Scenes/window_default.tscn" id="4_8d2i4"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="5_8d2i4"]
+[ext_resource type="PackedScene" uid="uid://cjbitdt03r8sc" path="res://Scenes/health_bar.tscn" id="6_8d2i4"]
+[ext_resource type="Script" uid="uid://hwl1a3d4oayi" path="res://Scripts/options.gd" id="7_8d2i4"]
+[ext_resource type="PackedScene" uid="uid://cu4th8f6oig" path="res://enemy/html_enemy.tscn" id="8_6l16w"]
+[ext_resource type="PackedScene" uid="uid://d4kh5lhm8k6ck" path="res://Html Scenes/Singleplayer/html_question_battle.tscn" id="9_jf7jn"]
+[ext_resource type="Script" uid="uid://qoojwnldxh7s" path="res://Scripts/opponent_battle.gd" id="11_opponent_battle"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ms847"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f4ggb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wb0gu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_84vmf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xdap8"]
+
+[sub_resource type="Theme" id="Theme_7w5d3"]
+Button/font_sizes/font_size = 40
+Button/styles/disabled = SubResource("StyleBoxEmpty_ms847")
+Button/styles/focus = SubResource("StyleBoxEmpty_f4ggb")
+Button/styles/hover = SubResource("StyleBoxEmpty_wb0gu")
+Button/styles/normal = SubResource("StyleBoxEmpty_84vmf")
+Button/styles/pressed = SubResource("StyleBoxEmpty_xdap8")
+
+[node name="Opponent Battle" type="Control" unique_id=125036972]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("11_opponent_battle")
+
+[node name="BattleLayout" type="CanvasLayer" parent="." unique_id=2115011377]
+
+[node name="Battle" type="Control" parent="BattleLayout" unique_id=1654924168]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_8d2i4")
+metadata/_edit_use_anchors_ = true
+
+[node name="Bottom" type="HBoxContainer" parent="BattleLayout/Battle" unique_id=835463703]
+custom_minimum_size = Vector2(870, 240)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -511.0
+offset_top = -266.0
+offset_right = 511.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Enemy" parent="BattleLayout/Battle/Bottom" unique_id=1717120480 instance=ExtResource("4_8d2i4")]
+layout_mode = 2
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleLayout/Battle/Bottom/Enemy" unique_id=125817164]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 784.0
+offset_top = -740.0
+offset_right = 948.0
+offset_bottom = -740.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer" unique_id=1380034177]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer/VBoxContainer" unique_id=587332067]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("5_8d2i4")
+theme_override_font_sizes/font_size = 40
+text = "PLAYER"
+horizontal_alignment = 2
+
+[node name="HealthBar" parent="BattleLayout/Battle/Bottom/Enemy/MarginContainer/VBoxContainer" unique_id=1586567242 instance=ExtResource("6_8d2i4")]
+layout_mode = 2
+show_percentage = true
+
+[node name="Player" parent="BattleLayout/Battle/Bottom" unique_id=1491260129 instance=ExtResource("4_8d2i4")]
+layout_mode = 2
+size_flags_stretch_ratio = 1.5
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Options" parent="BattleLayout/Battle" unique_id=1737756703 instance=ExtResource("4_8d2i4")]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 0
+offset_left = 586.0
+offset_top = 813.0
+offset_right = 826.0
+offset_bottom = 1053.0
+size_flags_stretch_ratio = 1.5
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="Options" type="VBoxContainer" parent="BattleLayout/Battle/Options" unique_id=1611475217]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+script = ExtResource("7_8d2i4")
+
+[node name="Fight" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=1956270848]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Magic")
+theme = SubResource("Theme_7w5d3")
+text = "FIGHT"
+
+[node name="Magic" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=874810436]
+layout_mode = 2
+text = "MAGIC"
+
+[node name="Defend" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=650451185]
+layout_mode = 2
+text = "DEFEND"
+
+[node name="Ultimate" type="Button" parent="BattleLayout/Battle/Options/Options" unique_id=1209353473]
+layout_mode = 2
+text = "ULTIMATE"
+
+[node name="Enemies" type="Control" parent="BattleLayout/Battle" unique_id=58041034]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("7_8d2i4")
+
+[node name="TextureButton" parent="BattleLayout/Battle/Enemies" unique_id=542823120 instance=ExtResource("8_6l16w")]
+layout_mode = 0
+offset_left = 1475.0
+offset_top = 485.0
+offset_right = 1524.0
+offset_bottom = 540.0
+
+[node name="Control" parent="BattleLayout" unique_id=818718884 instance=ExtResource("9_jf7jn")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5

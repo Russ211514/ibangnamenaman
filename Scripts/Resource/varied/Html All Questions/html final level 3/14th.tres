@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d1mqh1jkjxt1i"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_8p1al"]
+
+[resource]
+script = ExtResource("1_8p1al")
+Question_Info = "What part of the element does the background-color property cover?"
+options = Array[String](["Only the text characters themselves.", "Only the border of the element.", "The entire content box, including the space behind the text.", "Only the space outside of the element."])
+correct = "The entire content box, including the space behind the text."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

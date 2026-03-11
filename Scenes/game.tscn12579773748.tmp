@@ -1,0 +1,469 @@
+[gd_scene format=3 uid="uid://dx2fjvio0f3k7"]
+
+[ext_resource type="Script" uid="uid://wywiaq14lp3r" path="res://Scripts/game.gd" id="1_i6g32"]
+[ext_resource type="Texture2D" uid="uid://cchw0nrt5a14n" path="res://Art Assets/backgrounds/bground.png" id="1_wowpa"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="2_i6g32"]
+[ext_resource type="Texture2D" uid="uid://cxf8ehq37nht0" path="res://Art Assets/host_join_game_panel.png" id="3_1l0tm"]
+[ext_resource type="Texture2D" uid="uid://dws5dgwtiwtwh" path="res://Art Assets/buttons/host_game_button.png" id="4_v158k"]
+[ext_resource type="Texture2D" uid="uid://fh6a7umyqk0l" path="res://Art Assets/buttons/copyCode button.png" id="5_1l0tm"]
+[ext_resource type="Texture2D" uid="uid://b01opm63luqfi" path="res://Art Assets/buttons/join_game_button.png" id="5_h4fw4"]
+[ext_resource type="Theme" uid="uid://2q3vbk6bmh2r" path="res://Themes/default_theme.tres" id="6_game"]
+[ext_resource type="PackedScene" uid="uid://cjbitdt03r8sc" path="res://Scenes/health_bar.tscn" id="7_game"]
+[ext_resource type="PackedScene" uid="uid://rlk8ts148a0u" path="res://player/html_player.tscn" id="8_game"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="8_v158k"]
+[ext_resource type="Script" uid="uid://bmndv0io8k31u" path="res://Scripts/game_battle.gd" id="9_game"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ldgsr"]
+texture = ExtResource("1_wowpa")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5yvi"]
+texture = ExtResource("3_1l0tm")
+region_rect = Rect2(66.78863, 16.963596, 186.54053, 146.24689)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rku1e"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rfjv2"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_1phco"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v158k"]
+texture = ExtResource("5_1l0tm")
+expand_margin_top = 20.0
+expand_margin_right = 80.0
+expand_margin_bottom = 25.0
+region_rect = Rect2(89.96948, 65.87415, 140.13805, 48.172234)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nb51f"]
+texture = ExtResource("4_v158k")
+expand_margin_left = 80.0
+expand_margin_top = 10.0
+expand_margin_right = 80.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(85.079185, 32.06587, 150.02844, 30.992142)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nnt18"]
+texture = ExtResource("5_h4fw4")
+expand_margin_left = 80.0
+expand_margin_top = 10.0
+expand_margin_right = 80.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(84.91611, 31.909313, 150.18684, 31.17384)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_h4fw4"]
+texture = ExtResource("8_v158k")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ewbju"]
+texture = ExtResource("8_v158k")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_85qyi"]
+texture = ExtResource("8_v158k")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_iivbl"]
+texture = ExtResource("8_v158k")
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvp1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvp2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvp3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvp4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pvp5"]
+
+[sub_resource type="Theme" id="Theme_pvp"]
+Button/font_sizes/font_size = 40
+Button/styles/disabled = SubResource("StyleBoxEmpty_pvp1")
+Button/styles/focus = SubResource("StyleBoxEmpty_pvp2")
+Button/styles/hover = SubResource("StyleBoxEmpty_pvp3")
+Button/styles/normal = SubResource("StyleBoxEmpty_pvp4")
+Button/styles/pressed = SubResource("StyleBoxEmpty_pvp5")
+
+[node name="game" type="Node" unique_id=1363385852]
+script = ExtResource("1_i6g32")
+
+[node name="bg" type="Panel" parent="." unique_id=1709896637]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -307.0
+offset_top = -3.0
+offset_right = -307.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_ldgsr")
+
+[node name="SpawnPoint" type="Marker2D" parent="bg" unique_id=655558707]
+position = Vector2(319, 563)
+
+[node name="SpawnPoint2" type="Marker2D" parent="bg" unique_id=51880654]
+position = Vector2(1572, 563)
+
+[node name="Title" type="Label" parent="." unique_id=1655762808]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1080.0
+offset_top = -450.0
+offset_right = 466.0
+offset_bottom = -256.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 220
+text = "CUSTOM LOBBY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1906907038]
+position = Vector2(654, 537)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=744100054]
+
+[node name="Multiplayer" type="Control" parent="UI" unique_id=1665847582]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="UI/Multiplayer" unique_id=187194144]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -346.0
+offset_top = -254.0
+offset_right = 346.0
+offset_bottom = 394.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_o5yvi")
+
+[node name="RoomName" type="LineEdit" parent="UI/Multiplayer" unique_id=1918888392]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 723.0
+offset_top = 701.0
+offset_right = 1199.0
+offset_bottom = 750.0
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_rku1e")
+theme_override_styles/read_only = SubResource("StyleBoxTexture_rfjv2")
+theme_override_styles/focus = SubResource("StyleBoxTexture_1phco")
+placeholder_text = "Room Name..."
+
+[node name="OIDinput" type="LineEdit" parent="UI/Multiplayer" unique_id=1862517226]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 723.0
+offset_top = 804.0
+offset_right = 1199.0
+offset_bottom = 853.0
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_colors/font_selected_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxTexture_rku1e")
+theme_override_styles/read_only = SubResource("StyleBoxTexture_rfjv2")
+theme_override_styles/focus = SubResource("StyleBoxTexture_1phco")
+placeholder_text = "Room Code..."
+
+[node name="CopyOID" type="Button" parent="UI/Multiplayer" unique_id=1498114858]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = 57.0
+offset_right = 125.0
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxTexture_v158k")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_v158k")
+theme_override_styles/hover = SubResource("StyleBoxTexture_v158k")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_v158k")
+text = "COPY CODE"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Multiplayer" unique_id=377820712]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.5
+offset_top = -198.0
+offset_right = 162.5
+offset_bottom = -14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 60
+
+[node name="Host" type="Button" parent="UI/Multiplayer/VBoxContainer" unique_id=1930283347]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_nb51f")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nb51f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_nb51f")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_nb51f")
+text = "HOST GAME"
+
+[node name="Join" type="Button" parent="UI/Multiplayer/VBoxContainer" unique_id=1419696442]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_nnt18")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_nnt18")
+theme_override_styles/hover = SubResource("StyleBoxTexture_nnt18")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_nnt18")
+text = "JOIN GAME"
+
+[node name="OnlineID" type="Label" parent="UI/Multiplayer" unique_id=25628725]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -146.5
+offset_top = -22.0
+offset_right = 146.5
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8784314, 0.78431374, 0.6039216, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 50
+text = "LOADING..."
+
+[node name="Back" type="Button" parent="UI/Multiplayer" unique_id=680157854]
+layout_mode = 0
+offset_left = 1646.0
+offset_top = 897.0
+offset_right = 1791.0
+offset_bottom = 967.0
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_h4fw4")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_ewbju")
+theme_override_styles/hover = SubResource("StyleBoxTexture_85qyi")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_iivbl")
+text = "BACK"
+
+[node name="BattleLayout" type="CanvasLayer" parent="." unique_id=1000000001]
+visible = false
+script = ExtResource("9_game")
+
+[node name="Battle" type="Control" parent="BattleLayout" unique_id=1000000002]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("6_game")
+
+[node name="Bottom" type="HBoxContainer" parent="BattleLayout/Battle" unique_id=1000000003]
+custom_minimum_size = Vector2(870, 240)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -511.0
+offset_top = -266.0
+offset_right = 511.0
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Player1" parent="BattleLayout/Battle/Bottom" unique_id=1000000004 instance=ExtResource("7_game")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleLayout/Battle/Bottom/Player1" unique_id=1000000005]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleLayout/Battle/Bottom/Player1/MarginContainer" unique_id=1000000006]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="BattleLayout/Battle/Bottom/Player1/MarginContainer/VBoxContainer" unique_id=1000000007]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 40
+text = "PLAYER 1"
+
+[node name="HealthBar" parent="BattleLayout/Battle/Bottom/Player1/MarginContainer/VBoxContainer" unique_id=1000000008 instance=ExtResource("8_game")]
+layout_mode = 2
+
+[node name="Player2" parent="BattleLayout/Battle/Bottom" unique_id=1000000009 instance=ExtResource("7_game")]
+layout_mode = 2
+size_flags_stretch_ratio = 1.5
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleLayout/Battle/Bottom/Player2" unique_id=1000000010]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleLayout/Battle/Bottom/Player2/MarginContainer" unique_id=1000000011]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="BattleLayout/Battle/Bottom/Player2/MarginContainer/VBoxContainer" unique_id=1000000012]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 40
+text = "PLAYER 2"
+horizontal_alignment = 2
+
+[node name="HealthBar" parent="BattleLayout/Battle/Bottom/Player2/MarginContainer/VBoxContainer" unique_id=1000000013 instance=ExtResource("8_game")]
+layout_mode = 2
+
+[node name="Options" parent="BattleLayout/Battle" unique_id=1000000014 instance=ExtResource("7_game")]
+custom_minimum_size = Vector2(240, 240)
+layout_mode = 0
+offset_left = 586.0
+offset_top = 813.0
+offset_right = 826.0
+offset_bottom = 1053.0
+size_flags_stretch_ratio = 1.5
+
+[node name="OptionsVBox" type="VBoxContainer" parent="BattleLayout/Battle/Options" unique_id=1000000015]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 25
+
+[node name="Fight" type="Button" parent="BattleLayout/Battle/Options/OptionsVBox" unique_id=1000000016]
+layout_mode = 2
+focus_neighbor_bottom = NodePath("../Magic")
+theme = SubResource("Theme_pvp")
+text = "FIGHT"
+
+[node name="Magic" type="Button" parent="BattleLayout/Battle/Options/OptionsVBox" unique_id=1000000017]
+layout_mode = 2
+text = "MAGIC"
+
+[node name="Defend" type="Button" parent="BattleLayout/Battle/Options/OptionsVBox" unique_id=1000000018]
+layout_mode = 2
+text = "DEFEND"
+
+[node name="Ultimate" type="Button" parent="BattleLayout/Battle/Options/OptionsVBox" unique_id=1000000019]
+layout_mode = 2
+text = "ULTIMATE"
+
+[node name="Info" type="Label" parent="BattleLayout/Battle" unique_id=1000000020]
+custom_minimum_size = Vector2(400, 80)
+layout_mode = 0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -255.0
+offset_top = 9.0
+offset_right = 255.0
+offset_bottom = 111.0
+grow_horizontal = 2
+theme = ExtResource("6_game")
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_font_sizes/font_size = 50
+text = "PLAYER 1'S TURN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionInfo" type="Label" parent="BattleLayout" unique_id=1000000021]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -50.0
+offset_right = 200.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("6_game")
+theme_override_font_sizes/font_size = 60
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="." unique_id=1582237255]
+spawn_path = NodePath("..")
+
+[node name="RoomLabel" type="Label" parent="." unique_id=884960383]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -519.0
+offset_top = 97.0
+offset_right = -13.0
+offset_bottom = 207.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -10
+theme_override_constants/shadow_offset_y = 10
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("2_i6g32")
+theme_override_font_sizes/font_size = 170
+text = "ROOM NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="UI/Multiplayer/CopyOID" to="." method="_on_copy_oid_pressed"]
+[connection signal="pressed" from="UI/Multiplayer/VBoxContainer/Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="UI/Multiplayer/VBoxContainer/Join" to="." method="_on_join_pressed"]
+[connection signal="pressed" from="UI/Multiplayer/Back" to="." method="_on_back_pressed"]

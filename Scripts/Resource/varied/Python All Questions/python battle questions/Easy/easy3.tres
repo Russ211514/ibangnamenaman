@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" load_steps=2 format=3 uid="uid://bgqyvto3b27pp"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_x20q4"]
+
+[resource]
+script = ExtResource("1_x20q4")
+Question_Info = "Which operator is used for subtraction in Python?"
+options = Array[String](["-", "+", "*", "/"])
+correct = "-"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

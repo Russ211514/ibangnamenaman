@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://73u13yor4ghv"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_74jxq"]
+
+[resource]
+script = ExtResource("1_74jxq")
+Question_Info = "Which operator is used to assign a value to a variable?"
+options = Array[String](["==", "->", "=", ":="])
+correct = "="
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://cm0ud6se2ntdo"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_h8h0i"]
+
+[resource]
+script = ExtResource("1_h8h0i")
+Question_Info = "What symbol is used to end a statement in Java?"
+options = Array[String]([".", ":", ";", ","])
+correct = ";"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

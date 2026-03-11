@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://chy4llir17hph"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_52v54"]
+
+[resource]
+script = ExtResource("1_52v54")
+Question_Info = "Which tag is used to create the largest, most important heading on a webpage?"
+options = Array[String](["<p>", "<h6>", "<h1>", "<title>"])
+correct = "<h1>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

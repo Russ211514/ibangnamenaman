@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://c3s3igm8qhxt8"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_53p5p"]
+
+[resource]
+script = ExtResource("1_53p5p")
+Question_Info = "Which element contains all the visible contents that show on the user's screen?"
+options = Array[String](["<head>", "<body>", "<!DOCTYPE html>", "<title>"])
+correct = "<body>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

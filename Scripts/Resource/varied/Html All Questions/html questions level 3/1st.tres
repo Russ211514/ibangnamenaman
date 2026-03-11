@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://blsu8ihps8j28"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_tyjkg"]
+
+[resource]
+script = ExtResource("1_tyjkg")
+Question_Info = "In which part of an HTML element must the style attribute be defined to properly apply inline CSS?"
+options = Array[String](["Within the closing tag (e.g., </h1 style=\"...\">)", "Immediately after the closing tag", "Within the opening tag (e.g., <h1 style=\"...\">)", "Between the opening and closing tags alongside the text content"])
+correct = "Within the opening tag (e.g., <h1 style=\"...\">)"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

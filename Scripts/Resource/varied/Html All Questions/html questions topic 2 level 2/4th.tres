@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bg1b6lrc2a1ab"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_gg1rw"]
+
+[resource]
+script = ExtResource("1_gg1rw")
+Question_Info = "You notice that your sentences are all squashed together in one big pile. Which tag did you likely forget to use to separate your text into groups?"
+options = Array[String](["<p>", "<head>", "<!DOCTYPE html>", "<title>"])
+correct = "<p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

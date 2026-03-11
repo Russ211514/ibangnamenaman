@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bo2w30wcphcff"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_ak434"]
+
+[resource]
+script = ExtResource("1_ak434")
+Question_Info = "Which CSS property should be used if you want to change the color of the characters in a heading to green?"
+options = Array[String](["background-color", "font-style", "color", "text-decoration"])
+correct = "color"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

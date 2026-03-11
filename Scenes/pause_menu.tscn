@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://b0ay65rdnltk5"]
+
+[ext_resource type="Script" uid="uid://dfaq6uv3o1m5t" path="res://Scripts/pause_menu.gd" id="1_emv3i"]
+
+[node name="PauseMenu" type="Control" unique_id=836059466]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_emv3i")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=321117841]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -131.0
+offset_top = -40.0
+offset_right = 131.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1800445133]
+layout_mode = 2
+theme_override_constants/separation = 200
+
+[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer" unique_id=410004584]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 130
+text = "RESUME"
+
+[node name="Leave" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1845336235]
+layout_mode = 2
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 130
+text = "LEAVE MATCH"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Leave" to="." method="_on_leave_pressed"]

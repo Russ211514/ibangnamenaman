@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d4iibbldnevwc"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_6vwvb"]
+
+[resource]
+script = ExtResource("1_6vwvb")
+Question_Info = "What is the purpose of `void` in the method signature?"
+options = Array[String](["It means the method is empty.", "It indicates the method returns no value.", "It allows the method to use numbers.", "It makes the method private."])
+correct = "It indicates the method returns no value."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

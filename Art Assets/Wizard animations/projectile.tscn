@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ccblpen8fhj1j"]
+
+[ext_resource type="Texture2D" uid="uid://wra65q6djryp" path="res://Art Assets/Wizard animations/Attack Projectile.png" id="1_0srmu"]
+[ext_resource type="Script" uid="uid://dhyao2nynm5c0" path="res://Scripts/projectile.gd" id="1_h1vv4"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h1vv4"]
+radius = 10.666667
+
+[node name="Projectile" type="CharacterBody2D" unique_id=1638468063]
+script = ExtResource("1_h1vv4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1063773781]
+scale = Vector2(3, 3)
+shape = SubResource("CircleShape2D_h1vv4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=867250863]
+scale = Vector2(4, 4)
+texture = ExtResource("1_0srmu")

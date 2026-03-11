@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://ebkv0i4vqkb2"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_oxyk0"]
+
+[resource]
+script = ExtResource("1_oxyk0")
+Question_Info = "If you apply `text-align: center;` to a paragraph, but then apply `float: right;` to an image **inside** that paragraph, where will the image go?"
+options = Array[String](["It will stay in the center because of the paragraph.", "It will move to the right, ignoring the paragraph's center alignment.", "It will disappear from the screen.", "It will move to the left."])
+correct = "It will move to the right, ignoring the paragraph's center alignment."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

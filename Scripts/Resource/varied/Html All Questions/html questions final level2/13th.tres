@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bqt0o7cgd5le2"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_c5tj3"]
+
+[resource]
+script = ExtResource("1_c5tj3")
+Question_Info = "You are writing a \"How to Play\" guide. You want the name of each step to stand out, and the instructions to be regular text. Which pair should you use?"
+options = Array[String](["<h6> for the step name and <h1> for the instructions.", "<h3> for the step name and <p> for the instructions.", "<p> for the step name and <p> for the instructions.", "<h1> for the step name and <h1> for the instructions."])
+correct = "<h3> for the step name and <p> for the instructions."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

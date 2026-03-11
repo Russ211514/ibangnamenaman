@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://botniwp76xer1"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_og0a8"]
+
+[resource]
+script = ExtResource("1_og0a8")
+Question_Info = "You want to add a large title (<h1>) and a paragraph of text (<p>) to your page. Where must these tags be placed for the user to see them on the screen?"
+options = Array[String](["Inside the <head> section.", "Inside the <body> section.", "Inside the <!DOCTYPE html> section.", "After the </html> closing tag."])
+correct = "Inside the <body> section."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

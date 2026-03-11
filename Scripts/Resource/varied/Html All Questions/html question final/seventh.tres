@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cyhrk2vluvtoy"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_1ccq3"]
+
+[resource]
+script = ExtResource("1_1ccq3")
+Question_Info = "Which section of the HTML skeleton acts like the \"Brain,\" holding information that doesn't show up on the main page area?"
+options = Array[String](["<body>", "<head>", "<title>", "<html>"])
+correct = "<head>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

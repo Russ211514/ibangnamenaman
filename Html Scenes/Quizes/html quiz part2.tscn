@@ -1,0 +1,311 @@
+[gd_scene format=3 uid="uid://cve6avnyhtgvs"]
+
+[ext_resource type="Script" uid="uid://cffndb4p4fi4o" path="res://Scripts/html_quiz_part_2.gd" id="1_k2vey"]
+[ext_resource type="Resource" uid="uid://xrvxumkhgckf" path="res://Scripts/Resource/varied/themes/html thems/HtmlThemePart2.tres" id="2_15hwj"]
+[ext_resource type="Texture2D" uid="uid://cchw0nrt5a14n" path="res://Art Assets/backgrounds/bground.png" id="2_k2vey"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="3_15hwj"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="4_cubum"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_2sbxp"]
+texture = ExtResource("2_k2vey")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7tc0a"]
+texture = ExtResource("4_cubum")
+expand_margin_top = 10.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t81d0"]
+texture = ExtResource("4_cubum")
+expand_margin_top = 10.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_e6ofd"]
+texture = ExtResource("4_cubum")
+expand_margin_left = 50.0
+expand_margin_top = 10.0
+expand_margin_right = 50.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.92622, 53.982002, 184.11021, 72.12353)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_me61r"]
+texture = ExtResource("4_cubum")
+expand_margin_left = 20.0
+expand_margin_top = 15.0
+expand_margin_right = 20.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.90838, 53.908474, 184.14914, 72.06175)
+
+[node name="Control" type="Control" unique_id=1576878818]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_k2vey")
+quiz = ExtResource("2_15hwj")
+color_right = Color(0, 1, 0, 1)
+color_wrong = Color(1, 0, 0, 1)
+
+[node name="Panel" type="Panel" parent="." unique_id=172001074]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_2sbxp")
+
+[node name="buttons" type="VBoxContainer" parent="." unique_id=143348719]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 121.0
+offset_top = -270.0
+offset_right = 306.5263
+offset_bottom = -120.0
+grow_vertical = 0
+theme_override_constants/separation = 30
+
+[node name="Back" type="Button" parent="buttons" unique_id=2094035902]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_7tc0a")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7tc0a")
+theme_override_styles/hover = SubResource("StyleBoxTexture_7tc0a")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_7tc0a")
+text = "BACK"
+
+[node name="Home" type="Button" parent="buttons" unique_id=2121665564]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_t81d0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_t81d0")
+theme_override_styles/hover = SubResource("StyleBoxTexture_t81d0")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_t81d0")
+text = "HOME"
+
+[node name="Question" type="VBoxContainer" parent="." unique_id=1064160041]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -839.0
+offset_top = 100.0
+offset_right = 839.0
+offset_bottom = 358.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="QuestionText" type="Label" parent="Question" unique_id=737524281]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 90
+text = "What is HTML mainly used for?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="QuestionHolder" type="VBoxContainer" parent="." unique_id=1747972925]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -323.0
+offset_top = 369.0
+offset_right = 323.0
+offset_bottom = 854.0
+grow_horizontal = 2
+theme_override_constants/separation = 35
+
+[node name="ButtonOption" type="Button" parent="QuestionHolder" unique_id=467433775]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_e6ofd")
+
+[node name="ButtonOption2" type="Button" parent="QuestionHolder" unique_id=847936714]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_e6ofd")
+
+[node name="ButtonOption3" type="Button" parent="QuestionHolder" unique_id=1375996219]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_e6ofd")
+
+[node name="ButtonOption4" type="Button" parent="QuestionHolder" unique_id=1359093794]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/hover = SubResource("StyleBoxTexture_e6ofd")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_e6ofd")
+
+[node name="AnswerPanel" type="HBoxContainer" parent="." unique_id=1603000001]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 880.0
+offset_right = 400.0
+offset_bottom = 950.0
+grow_horizontal = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="LockIn" type="Button" parent="AnswerPanel" unique_id=1603000002]
+layout_mode = 2
+custom_minimum_size = Vector2(150, 0)
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/hover = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_me61r")
+text = "LOCK IN"
+
+[node name="Next" type="Button" parent="AnswerPanel" unique_id=1603000003]
+layout_mode = 2
+custom_minimum_size = Vector2(150, 0)
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/hover = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_me61r")
+text = "NEXT"
+
+[node name="GameOver" type="ColorRect" parent="." unique_id=1941781725]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 645.3334
+offset_top = 363.0
+offset_right = -645.3334
+offset_bottom = -363.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Score" type="Label" parent="GameOver" unique_id=659772054]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -76.5
+offset_top = -68.5
+offset_right = 76.5
+offset_bottom = 68.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 100
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Restart" type="Button" parent="GameOver" unique_id=2059405742]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = 356.0
+offset_right = 193.0
+offset_bottom = 425.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/hover = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_me61r")
+text = "RESTART QUIZ"
+
+[node name="NextLevel" type="Button" parent="GameOver" unique_id=2059405743]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = 351.0
+offset_right = 193.0
+offset_bottom = 420.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_15hwj")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/hover = SubResource("StyleBoxTexture_me61r")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_me61r")
+text = "NEXT LEVEL"
+
+[connection signal="pressed" from="AnswerPanel/LockIn" to="." method="_on_lock_in_pressed"]
+[connection signal="pressed" from="AnswerPanel/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="buttons/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="buttons/Home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="GameOver/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="GameOver/NextLevel" to="." method="_on_next_level_pressed"]

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://lsqk486envf"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_p2bkf"]
+
+[resource]
+script = ExtResource("1_p2bkf")
+Question_Info = "How do you turn an image into a link?"
+options = Array[String](["Put the `href` attribute inside the `<img>` tag.", "Wrap the `<img>` tag inside an `<a>` tag.", "Put the `src` attribute inside an `<a>` tag.", "You cannot turn images into links."])
+correct = "Wrap the `<img>` tag inside an `<a>` tag."
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

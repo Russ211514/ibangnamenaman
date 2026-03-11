@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://c0uxs4hhhuvty"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_8owoh"]
+
+[resource]
+script = ExtResource("1_8owoh")
+Question_Info = "What is the primary reason for adding `<!DOCTYPE html>` at the very top of your file?"
+options = Array[String](["To make the text bold.", "To tell the browser to use the HTML5 standard for rendering.", "To link the page to the internet.", "To give the page a file name."])
+correct = "To tell the browser to use the HTML5 standard for rendering."
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

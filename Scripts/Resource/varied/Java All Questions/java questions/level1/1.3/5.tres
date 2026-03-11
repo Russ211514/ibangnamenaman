@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://5ipg8teu070p"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_vy46t"]
+
+[resource]
+script = ExtResource("1_vy46t")
+Question_Info = "Which of the following is an incorrect comment syntax?"
+options = Array[String](["// Comment", "/* Comment */", "\\* Comment *\\", "/** Comment */"])
+correct = "\\* Comment *\\"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

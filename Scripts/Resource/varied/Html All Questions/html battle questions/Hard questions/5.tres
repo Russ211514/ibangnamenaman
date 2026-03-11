@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dkg5821y0ef6t"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_w2lvj"]
+
+[resource]
+script = ExtResource("1_w2lvj")
+Question_Info = "Your HTML file is inside a folder. You want to link to an image that is **outside** of that folder in the main directory. Which symbol is used to tell the browser to \"go up one level\"?"
+options = Array[String](["`//`", "`..`", "`^^`", "`>>`"])
+correct = "`..`"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

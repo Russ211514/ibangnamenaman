@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://bhcjdw6yfk2gf"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_7vws3"]
+
+[resource]
+script = ExtResource("1_7vws3")
+Question_Info = "Which of these is a valid variable name?"
+options = Array[String](["2number", "myNumber", "@value", "total-score"])
+correct = "myNumber"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://c72krr4lu5kd6"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_2ross"]
+
+[resource]
+script = ExtResource("1_2ross")
+Question_Info = "If you want a link to open in a **new tab** so the user doesn't leave your game, which attribute and value should you add to the `<a>` tag?"
+options = Array[String](["`target=\"new\"`", "`target=\"_blank\"`", "`open=\"tab\"`", "`href=\"_blank\"`"])
+correct = "`target=\"_blank\"`"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

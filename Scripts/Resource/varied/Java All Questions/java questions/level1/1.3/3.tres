@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cgtkdlyn2650v"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_nglja"]
+
+[resource]
+script = ExtResource("1_nglja")
+Question_Info = "Where can a single-line comment (`//`) be placed?"
+options = Array[String](["Only at the start of a line.", "Only at the end of a line.", "Either on its own line or after a line of code.", "Only outside of the class."])
+correct = "Either on its own line or after a line of code."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

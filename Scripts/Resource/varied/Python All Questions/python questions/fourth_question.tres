@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://douv8mnv523e5"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_ye2v4"]
+
+[resource]
+script = ExtResource("1_ye2v4")
+Question_Info = "Which of the following is a correct variable assignment in Python?"
+options = Array[String](["int x = 10", "x == 10", "10 = x", "x = 10"])
+correct = "x = 10"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

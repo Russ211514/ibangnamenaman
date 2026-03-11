@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://brokqy3hd5ukk"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_5pj18"]
+
+[resource]
+script = ExtResource("1_5pj18")
+Question_Info = "Your image `hero.png` is inside a folder named `assets`. What is the correct `src` path?"
+options = Array[String](["`src=\"hero.png\"`", "`src=\"assets/hero.png\"`", "`src=\"folder:assets;hero.png\"`", "`src=\"hero.png/assets\"`"])
+correct = "`src=\"assets/hero.png\"`"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

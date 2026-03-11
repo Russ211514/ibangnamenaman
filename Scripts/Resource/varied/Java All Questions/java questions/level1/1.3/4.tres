@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://csvd4xu73mk6e"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_lotww"]
+
+[resource]
+script = ExtResource("1_lotww")
+Question_Info = "What is the benefit of \"commenting out\" a block of code?"
+options = Array[String](["It makes the code run faster.", "It allows you to test different logic without deleting your work.", "It clears the computer's memory.", "It fixes syntax errors automatically."])
+correct = "It allows you to test different logic without deleting your work."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

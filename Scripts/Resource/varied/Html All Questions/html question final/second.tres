@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://duxf0eeyx1hx8"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_2b1ar"]
+
+[resource]
+script = ExtResource("1_2b1ar")
+Question_Info = "Every single piece of your website (the brain, the title, and the content) must be wrapped inside one main \"Root\" element. What is the name of that tag?"
+options = Array[String](["<body>", "<head>", "<html>", "<root>"])
+correct = "<html>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

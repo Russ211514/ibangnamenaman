@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://4gbg2cddhi3g"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_m0gbv"]
+
+[resource]
+script = ExtResource("1_m0gbv")
+Question_Info = "If you have the code `<strong><b>Danger!</b></strong>`, what is the primary technical difference between the two tags used?"
+options = Array[String](["There is no difference; they are identical.", "`<b>` is for visual weight, while `<strong>` is for semantic importance.", "`<strong>` makes text bigger, `<b>` just makes it darker.", "`<b>` is an empty element, while `<strong>` is not."])
+correct = "`<b>` is for visual weight, while `<strong>` is for semantic importance."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

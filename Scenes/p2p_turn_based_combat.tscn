@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://b123456a83c8"]
+
+[ext_resource type="Script" uid="uid://c6j8lpjw0gfnf" path="res://Scripts/p2p_turn_based_combat.gd" id="1_combat"]
+
+[node name="P2PCombat" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_combat")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="TurnInfoLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "YOUR TURN"
+alignment = 1
+
+[node name="HSeparator1" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="OpponentHealthLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Opponent Health: 150/150"
+alignment = 1
+
+[node name="OpponentActionResultLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = ""
+alignment = 1
+visible = false
+
+[node name="HSeparator2" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="MyHealthLabel" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Your Health: 150/150"
+alignment = 1
+
+[node name="HSeparator3" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ActionButtonsContainer" type="VBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="FightButton" type="Button" parent="VBoxContainer/ActionButtonsContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "FIGHT (10 Damage)"
+theme_override_font_sizes/font_size = 20
+
+[node name="MagicButton" type="Button" parent="VBoxContainer/ActionButtonsContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "MAGIC (15 Damage, 20s Cooldown)"
+theme_override_font_sizes/font_size = 20
+
+[node name="DefendButton" type="Button" parent="VBoxContainer/ActionButtonsContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "DEFEND (0 Damage, 15s Cooldown)"
+theme_override_font_sizes/font_size = 20
+
+[node name="UltimateButton" type="Button" parent="VBoxContainer/ActionButtonsContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "ULTIMATE (25 Damage, 60s Cooldown)"
+theme_override_font_sizes/font_size = 20
+
+[node name="MagicCooldownLabel" type="Label" parent="VBoxContainer/ActionButtonsContainer"]
+layout_mode = 2
+text = "Magic CD: 20.0s"
+alignment = 1
+visible = false
+
+[node name="DefendCooldownLabel" type="Label" parent="VBoxContainer/ActionButtonsContainer"]
+layout_mode = 2
+text = "Defend CD: 15.0s"
+alignment = 1
+visible = false
+
+[node name="UltimateCooldownLabel" type="Label" parent="VBoxContainer/ActionButtonsContainer"]
+layout_mode = 2
+text = "Ultimate CD: 60.0s"
+alignment = 1
+visible = false

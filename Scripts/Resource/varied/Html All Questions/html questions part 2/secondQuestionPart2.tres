@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://de8fpg8ebn1jb"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_gc1rf"]
+
+[resource]
+script = ExtResource("1_gc1rf")
+Question_Info = "Which element serves as the \"root\" container that wraps every other element?"
+options = Array[String](["<body>", "<head>", "<html>", "<root>"])
+correct = "<html>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

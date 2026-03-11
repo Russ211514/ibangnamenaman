@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dp6k6hmn01lrj"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_io77y"]
+
+[resource]
+script = ExtResource("1_io77y")
+Question_Info = "Which statement best describes HTML?"
+options = Array[String](["A language used to create game logic.", "A markup language that describes web page content.", "A tool for designing graphics.", "A database language."])
+correct = "A markup language that describes web page content."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d2fwv1q462vl1"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_n65ts"]
+
+[resource]
+script = ExtResource("1_n65ts")
+Question_Info = "HTML has six levels of titles. If <h1> is the largest megaphone, which tag is used for the smallest and quietest heading level?"
+options = Array[String](["<h0>", "<h10>", "<h6>", "<small>"])
+correct = "<h6>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

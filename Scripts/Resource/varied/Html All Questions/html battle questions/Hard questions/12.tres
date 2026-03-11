@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://blauy04ybqg53"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_txg56"]
+
+[resource]
+script = ExtResource("1_txg56")
+Question_Info = "What is the difference between the `title` attribute and the `alt` attribute on an image?"
+options = Array[String](["`title` is for screen readers; `alt` is for tooltips.", "`alt` is for accessibility; `title` creates a tooltip when you hover.", "They are the same thing and can be used interchangeably.", "`alt` changes the file name; `title` changes the image size."])
+correct = "`alt` is for accessibility; `title` creates a tooltip when you hover."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

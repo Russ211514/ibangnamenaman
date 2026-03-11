@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://3edu2g67y6ju"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_xifws"]
+
+[resource]
+script = ExtResource("1_xifws")
+Question_Info = "Which of the following is a valid variable initialization?"
+options = Array[String](["int score = 10;", "int score 10;", "score = 10 int;", "int = 10;"])
+correct = "int score = 10;"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

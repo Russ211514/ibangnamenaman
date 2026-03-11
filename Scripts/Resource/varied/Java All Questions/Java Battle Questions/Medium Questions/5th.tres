@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://b5uvuu5tmrkf2"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_7w48a"]
+
+[resource]
+script = ExtResource("1_7w48a")
+Question_Info = "Which of these is a nested if example?"
+options = Array[String](["if(a>0) if(b>0) {...}", "for(i=0;i<5;i++) {...}", "switch(x){ case 1: ...}", "while(a>0) {...}"])
+correct = "if(a>0) if(b>0) {...}"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

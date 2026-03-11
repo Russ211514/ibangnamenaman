@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://del851yt8267y"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_bktfe"]
+
+[resource]
+script = ExtResource("1_bktfe")
+Question_Info = "HTML has six levels of titles. Which tag is used for the smallest and quietest heading level?"
+options = Array[String](["`<h0>`", "`<h6>`", "`<h1>`", "`<small>`"])
+correct = "`<h6>`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

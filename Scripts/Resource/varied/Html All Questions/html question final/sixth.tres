@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bbhjvf6kb804v"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_2uydc"]
+
+[resource]
+script = ExtResource("1_2uydc")
+Question_Info = "You are looking at a piece of code. Which of these is written correctly following standard HTML syntax?"
+options = Array[String](["<p>Hello World <p>", "<p>Hello World /p>", "<p>Hello World</p>", "<p>Hello World</p/"])
+correct = "<p>Hello World</p>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

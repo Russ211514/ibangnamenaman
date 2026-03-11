@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://d2bjp30k6wbm2"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_x8qcg"]
+
+[resource]
+script = ExtResource("1_x8qcg")
+Question_Info = "The JVM (Java Virtual Machine) is responsible for:"
+options = Array[String](["Writing the code for you.", "Styling the text.", "Executing the compiled bytecode.", "Saving the file to the cloud."])
+correct = "Executing the compiled bytecode."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

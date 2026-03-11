@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://8wxt3il02ogq"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_g7sr7"]
+
+[resource]
+script = ExtResource("1_g7sr7")
+Question_Info = "Which of the following statements is true regarding the <br> tag used for line breaks?"
+options = Array[String](["It must have a closing tag with a forward slash like </br>.", "It is an \"Empty Element\" that does not need a closing partner.", "it must be placed inside the <head> section.", "It is used to define the root of the document."])
+correct = "It is an \"Empty Element\" that does not need a closing partner."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

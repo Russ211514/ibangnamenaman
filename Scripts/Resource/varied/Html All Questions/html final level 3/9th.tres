@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dlyutwbjak8l7"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_xs4bj"]
+
+[resource]
+script = ExtResource("1_xs4bj")
+Question_Info = "Which property and value combination will move your text from the default left side of the container to the middle?"
+options = Array[String](["text-align: center;", "align-text: middle;", "position: center;", "text-style: center;"])
+correct = "text-align: center;"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

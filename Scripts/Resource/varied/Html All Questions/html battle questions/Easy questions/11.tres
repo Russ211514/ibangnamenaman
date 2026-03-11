@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://cxx6u6jbsaqnx"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_m83xk"]
+
+[resource]
+script = ExtResource("1_m83xk")
+Question_Info = "Which tag draws a line directly beneath the text content?"
+options = Array[String](["`<u>`", "`<i>`", "`<b>`", "`<a>`"])
+correct = "`<u>`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://cilw30wc41h2v"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_q6os6"]
+
+[resource]
+script = ExtResource("1_q6os6")
+Question_Info = "Which property is used to move text to the right side of its container?"
+options = Array[String](["text-position: right;", "text-align: right;", "horizontal-align: right;", "float: right;"])
+correct = "text-align: right;"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

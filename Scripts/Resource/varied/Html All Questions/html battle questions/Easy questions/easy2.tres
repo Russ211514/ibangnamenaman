@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://iqhudhnthryi"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_5xy8f"]
+
+[resource]
+script = ExtResource("1_5xy8f")
+Question_Info = "Which section of the HTML skeleton holds \"secret\" information like the page title and meta-data that doesn't show up on the main screen?"
+options = Array[String](["<head>", "<h1>", "<p>", "<body>"])
+correct = "<head>"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

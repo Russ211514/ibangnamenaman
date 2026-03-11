@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dgsjyh5mjbg8c"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_udnue"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_udnue"]
+load_path = "res://.godot/imported/Screenshot 2026-02-17 003523.png-d8f8c72156faab583903dbc02c74a765.ctex"
+
+[resource]
+script = ExtResource("1_udnue")
+Question_Info = "What is the output?"
+type = 1
+question_image = SubResource("CompressedTexture2D_udnue")
+options = Array[String](["2 4 6 8", "8 6 4 2", "0 2 4 6", "Error"])
+correct = "8 6 4 2"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

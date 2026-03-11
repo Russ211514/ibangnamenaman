@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cvj375674d1g6"]
+
+[ext_resource type="Texture2D" uid="uid://c5vqrmo6twcgv" path="res://Art Assets/Nine_patch_texture.png" id="1_4q3lj"]
+[ext_resource type="Script" uid="uid://bpbdis4v25wee" path="res://Scripts/window_default.gd" id="2_c8mgr"]
+
+[node name="WindowDefault" type="NinePatchRect"]
+size_flags_horizontal = 3
+texture = ExtResource("1_4q3lj")
+patch_margin_left = 8
+patch_margin_top = 8
+patch_margin_right = 8
+patch_margin_bottom = 8
+script = ExtResource("2_c8mgr")

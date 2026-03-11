@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://bi14st65g640a"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_shjxj"]
+
+[resource]
+script = ExtResource("1_shjxj")
+Question_Info = "What happens to a webpage if a developer forgets to add the `</a>` closing tag after a link?"
+options = Array[String](["The link will not work at all.", "Only the first word of the link will be clickable.", "All following content on the page may become part of the clickable link.", "The browser will automatically delete the text."])
+correct = "All following content on the page may become part of the clickable link."
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://h1318hlqhweu"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_foaiq"]
+
+[resource]
+script = ExtResource("1_foaiq")
+Question_Info = "What is the result of forgetting a semicolon (`;`) at the end of a line?"
+options = Array[String](["A runtime error.", "A syntax error during compilation.", "The line is simply ignored.", "The text prints in a different color."])
+correct = "A syntax error during compilation."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

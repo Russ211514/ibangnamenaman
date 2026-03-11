@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://cug0gcr3pkwi4"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_4qwu4"]
+
+[resource]
+script = ExtResource("1_4qwu4")
+Question_Info = "Which keyword is used to create a function in Python?"
+options = Array[String](["func", "define", "def", "function"])
+correct = "def"
+difficulty = 1
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

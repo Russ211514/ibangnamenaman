@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dyia5gpji5w1d"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_povo6"]
+
+[resource]
+script = ExtResource("1_povo6")
+Question_Info = "Why doesn't the <br> tag have a closing </br> partner?"
+options = Array[String](["It is an \"Empty Element\" with no content inside.", "It is a mistake in HTML.", "It is a root element.", "It only works on Mac computers."])
+correct = "It is an \"Empty Element\" with no content inside."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

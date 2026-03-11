@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://d0ypewvqdms3d"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_ib20b"]
+
+[resource]
+script = ExtResource("1_ib20b")
+Question_Info = "What is HTML mainly used for?"
+options = Array[String](["To add logic and calculations to a website.", "To describe the structure of a web page.", "To store data in a database.", "To control computer hardware."])
+correct = "To describe the structure of a web page."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

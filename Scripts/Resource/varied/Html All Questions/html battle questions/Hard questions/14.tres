@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://2p503esy5tci"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_msxtw"]
+
+[resource]
+script = ExtResource("1_msxtw")
+Question_Info = "You wrote `<img src=\"C:/Users/Documents/image.jpg\">`. Why is this a bad way to code a website?"
+options = Array[String](["The file path is too long.", "It uses a \"Local Path\" that will only work on your specific computer, not on the internet.", "You cannot use capital letters in file paths.", "The `src` attribute only accepts web links (URLs)."])
+correct = "It uses a \"Local Path\" that will only work on your specific computer, not on the internet."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

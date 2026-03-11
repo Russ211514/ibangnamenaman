@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bfe86eqai7bqt"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_aycqy"]
+
+[resource]
+script = ExtResource("1_aycqy")
+Question_Info = "You found an <h4> tag in your code and you want to change it to something slightly larger. Which tag should you pick?"
+options = Array[String](["<h5>", "<h3>", "<h6>", "<p>"])
+correct = "<h3>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

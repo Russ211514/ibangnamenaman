@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://ddxr6xr0wd6q6"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_fcsc0"]
+
+[resource]
+script = ExtResource("1_fcsc0")
+Question_Info = "You are creating the main title for your \"Pixel Quest\" game. Which tag will make the text the biggest and most important so players notice it first?"
+options = Array[String](["<h6>", "<h1>", "<p>", "<h3>"])
+correct = "<h1>"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

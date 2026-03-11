@@ -1,0 +1,290 @@
+[gd_scene format=3 uid="uid://dqpcqek0mbcgu"]
+
+[ext_resource type="Script" uid="uid://bhhjfius8w8e6" path="res://Scripts/final_level_quiz_html.gd" id="1_d42lx"]
+[ext_resource type="Resource" uid="uid://0xyvrwshcyol" path="res://Scripts/Resource/varied/themes/html thems/HtmlFinalLevelTheme.tres" id="2_ttd3v"]
+[ext_resource type="Texture2D" uid="uid://cchw0nrt5a14n" path="res://Art Assets/backgrounds/bground.png" id="2_yrnbm"]
+[ext_resource type="FontFile" uid="uid://ctac5wch5ukxl" path="res://Art Assets/VCR_OSD_MONO_1.001.ttf" id="3_ttd3v"]
+[ext_resource type="Texture2D" uid="uid://buv67q5krfss" path="res://Art Assets/buttons/stonebutton.png" id="4_po0wu"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3oxnr"]
+texture = ExtResource("2_yrnbm")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w22qp"]
+texture = ExtResource("4_po0wu")
+expand_margin_top = 10.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a6bsn"]
+texture = ExtResource("4_po0wu")
+expand_margin_top = 10.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.8661, 53.960724, 184.1995, 72.08902)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_etfy8"]
+texture = ExtResource("4_po0wu")
+expand_margin_left = 50.0
+expand_margin_top = 10.0
+expand_margin_right = 50.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.92622, 53.982002, 184.11021, 72.12353)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cqa58"]
+texture = ExtResource("4_po0wu")
+expand_margin_left = 20.0
+expand_margin_top = 15.0
+expand_margin_right = 20.0
+expand_margin_bottom = 15.0
+region_rect = Rect2(67.90838, 53.908474, 184.14914, 72.06175)
+
+[node name="Control" type="Control" unique_id=1796310306]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d42lx")
+quiz = ExtResource("2_ttd3v")
+color_right = Color(0, 1, 0, 1)
+color_wrong = Color(1, 0, 0, 1)
+
+[node name="Panel" type="Panel" parent="." unique_id=198539808]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_3oxnr")
+
+[node name="buttons" type="VBoxContainer" parent="." unique_id=81277047]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 121.0
+offset_top = -270.0
+offset_right = 306.5263
+offset_bottom = -120.0
+grow_vertical = 0
+theme_override_constants/separation = 30
+
+[node name="Back" type="Button" parent="buttons" unique_id=2066008510]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_w22qp")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_w22qp")
+theme_override_styles/hover = SubResource("StyleBoxTexture_w22qp")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_w22qp")
+text = "BACK"
+
+[node name="Home" type="Button" parent="buttons" unique_id=404813627]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxTexture_a6bsn")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_a6bsn")
+theme_override_styles/hover = SubResource("StyleBoxTexture_a6bsn")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_a6bsn")
+text = "HOME"
+
+[node name="Question" type="VBoxContainer" parent="." unique_id=254426612]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -843.0
+offset_top = 100.0
+offset_right = 843.0
+offset_bottom = 378.0
+grow_horizontal = 2
+
+[node name="QuestionText" type="Label" parent="Question" unique_id=289459940]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 20
+theme_override_constants/shadow_outline_size = 1
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 70
+text = "What is HTML mainly used for?"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="QuestionHolder" type="VBoxContainer" parent="." unique_id=781352140]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -442.0
+offset_top = 382.0
+offset_right = 442.0
+offset_bottom = 867.0
+grow_horizontal = 2
+theme_override_constants/separation = 35
+
+[node name="ButtonOption" type="Button" parent="QuestionHolder" unique_id=139649834]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_etfy8")
+autowrap_mode = 3
+
+[node name="ButtonOption2" type="Button" parent="QuestionHolder" unique_id=1427572083]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_etfy8")
+autowrap_mode = 3
+
+[node name="ButtonOption3" type="Button" parent="QuestionHolder" unique_id=890456916]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_etfy8")
+autowrap_mode = 3
+
+[node name="ButtonOption4" type="Button" parent="QuestionHolder" unique_id=2059409109]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_etfy8")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_etfy8")
+autowrap_mode = 3
+
+[node name="AnswerPanel" type="HBoxContainer" parent="." unique_id=1607000001]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -400.0
+offset_top = 880.0
+offset_right = 400.0
+offset_bottom = 950.0
+grow_horizontal = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="LockIn" type="Button" parent="AnswerPanel" unique_id=1607000002]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_cqa58")
+text = "LOCK IN"
+
+[node name="Next" type="Button" parent="AnswerPanel" unique_id=1607000003]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_cqa58")
+text = "NEXT"
+
+[node name="GameOver" type="ColorRect" parent="." unique_id=1537896141]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 645.3334
+offset_top = 363.0
+offset_right = -645.3334
+offset_bottom = -363.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0)
+
+[node name="Score" type="Label" parent="GameOver" unique_id=837957869]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -675.0
+offset_top = -45.0
+offset_right = 675.0
+offset_bottom = 210.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 100
+text = "0/0"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Restart" type="Button" parent="GameOver" unique_id=380329513]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -193.0
+offset_top = 360.0
+offset_right = 193.0
+offset_bottom = 429.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9529412, 0.77254903, 0.46666667, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_ttd3v")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/hover = SubResource("StyleBoxTexture_cqa58")
+theme_override_styles/disabled = SubResource("StyleBoxTexture_cqa58")
+text = "RESTART QUIZ"
+
+[connection signal="pressed" from="buttons/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="buttons/Home" to="." method="_on_home_pressed"]
+[connection signal="pressed" from="AnswerPanel/LockIn" to="." method="_on_lock_in_pressed"]
+[connection signal="pressed" from="AnswerPanel/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="GameOver/Restart" to="." method="_on_restart_pressed"]

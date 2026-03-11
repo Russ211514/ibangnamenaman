@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://dg4617k3d73h1"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_xurao"]
+
+[resource]
+script = ExtResource("1_xurao")
+Question_Info = "Why is `\"10 + 10\"` printed as text instead of calculated as 20?"
+options = Array[String](["Because of the parentheses.", "Because double quotes define it as a String literal.", "Because Java cannot do math.", "Because it is inside a class."])
+correct = "Because double quotes define it as a String literal."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

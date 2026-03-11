@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://bpn1tkhv7kj8t"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_loumy"]
+
+[resource]
+script = ExtResource("1_loumy")
+Question_Info = "Which keyword defines an abstract method in Java?"
+options = Array[String](["final", "abstract", "static", "public"])
+correct = "abstract"
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

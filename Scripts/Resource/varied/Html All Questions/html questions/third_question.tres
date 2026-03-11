@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://bwoe6q6djpfi4"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_8slm2"]
+
+[resource]
+script = ExtResource("1_8slm2")
+Question_Info = "What does the browser use to understand how to display your content?"
+options = Array[String](["Bricks", "Tags", "Folders", "Screws"])
+correct = "Tags"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

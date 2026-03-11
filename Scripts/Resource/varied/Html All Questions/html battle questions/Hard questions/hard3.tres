@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://81n7om70wli3"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_g1a6t"]
+
+[resource]
+script = ExtResource("1_g1a6t")
+Question_Info = "In the code `<p style=\"color:red; font-size:20px; text-align:center;\">`, what would happen if you replaced the semicolons (`;`) with commas (`,`)?"
+options = Array[String](["The code would still work perfectly.", "The browser would ignore the style attribute entirely.", "Only the first style (color) would work.", "The text would appear in all capital letters."])
+correct = "The browser would ignore the style attribute entirely."
+difficulty = 2
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"

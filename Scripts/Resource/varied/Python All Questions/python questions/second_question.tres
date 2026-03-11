@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" load_steps=2 format=3 uid="uid://dofp4fk4tth8k"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_lrk7k"]
+
+[resource]
+script = ExtResource("1_lrk7k")
+Question_Info = "Which function is used to display output in Python?"
+options = Array[String](["show()", "display()", "print()", "output()"])
+correct = "print()"
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

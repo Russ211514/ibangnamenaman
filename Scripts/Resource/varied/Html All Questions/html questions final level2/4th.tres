@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="QuizQuestion" format=3 uid="uid://co0gg6ueh5pgm"]
+
+[ext_resource type="Script" uid="uid://bwi7na0gcdaoc" path="res://Scripts/resources/question.gd" id="1_ooj3x"]
+
+[resource]
+script = ExtResource("1_ooj3x")
+Question_Info = "Why does the browser add extra white space (margins) above and below a <p> tag automatically?"
+options = Array[String](["To make the text change to a bold font.", "To keep the text from looking crowded and messy.", "To hide the text from players until they click it.", "To tell the browser the page is finished."])
+correct = "To keep the text from looking crowded and messy."
+metadata/_custom_type_script = "uid://bwi7na0gcdaoc"

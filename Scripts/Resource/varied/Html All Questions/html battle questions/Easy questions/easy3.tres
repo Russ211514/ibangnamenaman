@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="BattleQuestion" format=3 uid="uid://dpl28ov2h56cc"]
+
+[ext_resource type="Script" uid="uid://dwxjlf7xx3n81" path="res://Scripts/resources/battle_questions.gd" id="1_devmg"]
+
+[resource]
+script = ExtResource("1_devmg")
+Question_Info = "Where must you place headings, images, and paragraphs if you want them to be visible to the user?"
+options = Array[String](["Inside the `<head>`", "Inside the `<body>`", "Outside the `<html>`", "Inside the `<!DOCTYPE html>`"])
+correct = "Inside the `<body>`"
+metadata/_custom_type_script = "uid://dwxjlf7xx3n81"
